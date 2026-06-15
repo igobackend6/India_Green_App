@@ -1,0 +1,151 @@
+{
+  "@@locale": "en",
+  "appTitle": "INDIA GREEN APP",
+  "tagline": "One App. Every Farmer. Every Partner.",
+  "navHome": "Home",
+  "navMarket": "AgriMart",
+  "navMandi": "Mandi",
+  "navAiDoc": "AI Doc",
+  "navHubs": "Hubs",
+  "welcomeUser": "Welcome, {name}!",
+  "@welcomeUser": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "salemFarmerHub": "Salem Farmer Hub",
+  "selectLanguage": "Select Your Language",
+  "selectLanguageSubtitle": "Choose your preferred language to continue",
+  "selectRoles": "Choose Your Roles",
+  "selectRolesSubtitle": "Select one or more roles that describe you",
+  "continueBtn": "Continue",
+  "loginWithOtp": "Login with OTP",
+  "enterPhone": "Enter Mobile Number",
+  "enterOtp": "Enter 6-digit OTP",
+  "verifyOtp": "Verify OTP",
+  "sendOtp": "Send OTP",
+  "resendOtp": "Resend OTP",
+  "enterName": "Enter Your Name",
+  "enterPincode": "Enter Pincode",
+  "phoneHint": "9876543210",
+  "otpSentTo": "OTP sent to +91 {phone}",
+  "@otpSentTo": {
+    "placeholders": {
+      "phone": { "type": "String" }
+    }
+  },
+  "pricePerQuintal": "₹{price}/Qtl",
+  "@pricePerQuintal": {
+    "placeholders": {
+      "price": { "type": "String" }
+    }
+  },
+  "addToBasket": "Add to Basket",
+  "placeOrder": "Place Order",
+  "basketItems": "{count, plural, =0{Empty Basket} =1{1 Item} other{{count} Items}}",
+  "@basketItems": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "cropDoctor": "Crop Doctor",
+  "askCropDoctor": "Describe your crop issue...",
+  "diagnosing": "Analyzing leaf image...",
+  "farmWallet": "Farm Wallet",
+  "addMoney": "Add Money",
+  "applyLoan": "Apply for Loan",
+  "govtSchemes": "Government Schemes",
+  "academy": "IGO Class Academy",
+  "startLesson": "Start Lesson",
+  "lessonComplete": "Lesson Completed!",
+  "jobPortal": "Agri Job Portal",
+  "applyNow": "Apply Now",
+  "franchiseOpps": "Franchise Opportunities",
+  "jointVentures": "Joint Ventures",
+  "landListings": "Farmland Listings",
+  "vendorDashboard": "Vendor Dashboard",
+  "myProfile": "My Profile",
+  "settings": "Settings",
+  "logout": "Logout",
+  "markAllRead": "Mark All as Read",
+  "clearAll": "Clear All",
+  "notifications": "Notifications",
+  "noNotifications": "No notifications yet",
+  "hubProfile": "My Profile",
+  "hubVendor": "Vendor Dashboard",
+  "hubFinance": "Farm Wallet & Loans",
+  "hubLearn": "Class Academy",
+  "hubOpps": "Estates Franchises",
+  "hubJobs": "Agri Job Portal",
+  "comingSoon": "Coming Soon",
+  "featureUnderDevelopment": "This feature is under development",
+  "quickActions": "Quick Actions",
+  "igoBrands": "IGO Universe Brands",
+  "viewAll": "View All",
+  "searchProducts": "Search products...",
+  "categories": "Categories",
+  
+  "roleFarmer": "Farmer",
+  "roleFarmerDesc": "Buy inputs, sell produce, crop advice",
+  "roleVendor": "Vendor",
+  "roleVendorDesc": "List products, manage orders, view payouts",
+  "roleConsumer": "Consumer",
+  "roleConsumerDesc": "Shop fresh organic products from farms",
+  "roleInvestor": "Investor",
+  "roleInvestorDesc": "Invest in farmlands, bonds, or franchise",
+  "roleJobSeeker": "Job Seeker",
+  "roleJobSeekerDesc": "Search agricultural jobs across India",
+  "roleFranchise": "Franchise Partner",
+  "roleFranchiseDesc": "Launch and grow official FICO branches",
+  "selectAtLeastOneRole": "Select at least one role",
+  "continueWithRoles": "Continue with {count} role(s)",
+  "@continueWithRoles": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "buyInputs": "Buy Inputs",
+  "sellProduce": "Sell Produce",
+  "mandiPrices": "Mandi Prices",
+  "loanApply": "Loan Apply",
+  "agriJobs": "Agri Jobs",
+  "igoAcademy": "IGO Academy",
+  "franchise": "Franchise",
+
+  "language": "Language",
+  "darkMode": "Dark Mode",
+  "notificationPrefs": "Notification Preferences",
+  "aboutApp": "About INDIA GREEN APP",
+
+  "seedsCategory": "Seeds",
+  "fertilizersCategory": "Fertilizers",
+  "pesticidesCategory": "Pesticides",
+  "toolsCategory": "Tools",
+  "saplingsCategory": "Saplings",
+  "featuredProducts": "Featured Products",
+  "addToCart": "Add to Cart",
+
+  "liveMandiPrices": "Live Mandi Prices",
+  "salemApmcMarket": "Salem APMC Market",
+  "change": "Change",
+  "arrival": "Arrival",
+
+  "scanCropDisease": "Scan Crop Disease",
+  "scanCropDiseaseDesc": "Take a photo of your affected crop leaf to get instant AI diagnosis and treatment recommendations.",
+  "openCamera": "Open Camera",
+  "analyzePhoto": "Analyze Photo",
+  "analyzing": "Analyzing your crop...",
+
+  "navProjects": "Projects",
+  "projectsTitle": "Projects",
+  "agriFarmingProjects": "Agri Farming Projects",
+  "aquacultureProjects": "Aquaculture Projects",
+  "livestockFarmingProjects": "Livestock Farming Projects",
+  "farmEngineeringProjects": "Farm Engineering Projects",
+
+  "userDetailsTitle": "Tell Us About You",
+  "userDetailsSubtitle": "A few details to personalize your experience",
+  "enterAddress": "Enter Your Village / Town",
+  "addressHint": "Village, Taluk, District",
+  "completeProfile": "Complete Profile & Enter App"
+}
