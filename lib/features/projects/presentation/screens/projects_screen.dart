@@ -24,6 +24,7 @@ class ProjectsScreen extends StatelessWidget {
         color: const Color(0xFF2E7D32),
         gradientEnd: const Color(0xFF1B5E20),
         route: Routes.agriProjects,
+        imagePath: 'assets/images/projects/Agri Farming Projects/Agri Farming Projects.png',
       ),
       _ProjectCategory(
         title: l10n.aquacultureProjects,
@@ -32,6 +33,7 @@ class ProjectsScreen extends StatelessWidget {
         color: const Color(0xFF0277BD),
         gradientEnd: const Color(0xFF01579B),
         route: Routes.aquacultureProjects,
+        imagePath: 'assets/images/projects/Aquaculture Farming Projects/Aquaculture Projects.png',
       ),
       _ProjectCategory(
         title: l10n.livestockFarmingProjects,
@@ -40,6 +42,7 @@ class ProjectsScreen extends StatelessWidget {
         color: const Color(0xFFE65100),
         gradientEnd: const Color(0xFFBF360C),
         route: Routes.livestockProjects,
+        imagePath: 'assets/images/projects/Livestock Farming Projects/Livestock Farming Projects.png',
       ),
       _ProjectCategory(
         title: l10n.farmEngineeringProjects,
@@ -48,6 +51,7 @@ class ProjectsScreen extends StatelessWidget {
         color: const Color(0xFF6A1B9A),
         gradientEnd: const Color(0xFF4A148C),
         route: Routes.farmEngineeringProjects,
+        imagePath: 'assets/images/projects/Farm Engineering Projects/Farm Engineering Projects.png',
       ),
     ];
 
@@ -107,6 +111,7 @@ class _ProjectCategory {
   final Color color;
   final Color gradientEnd;
   final String? route;
+  final String imagePath;
 
   const _ProjectCategory({
     required this.title,
@@ -115,6 +120,7 @@ class _ProjectCategory {
     required this.color,
     required this.gradientEnd,
     required this.route,
+    required this.imagePath,
   });
 }
 
@@ -148,57 +154,75 @@ class _ProjectCategoryCard extends StatelessWidget {
         },
         child: Container(
           width: double.infinity,
-          padding: const EdgeInsets.all(24),
+          height: 180,
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [category.color, category.gradientEnd],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
             borderRadius: BorderRadius.circular(20),
+            image: DecorationImage(
+              image: AssetImage(category.imagePath),
+              fit: BoxFit.cover,
+            ),
           ),
-          child: Row(
-            children: [
-              // Icon circle
-              Container(
-                width: 60,
-                height: 60,
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.2),
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: Icon(category.icon, color: Colors.white, size: 32),
+          child: Container(
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              gradient: LinearGradient(
+                colors: [
+                  Colors.black.withValues(alpha: 0.8),
+                  Colors.black.withValues(alpha: 0.1),
+                ],
+                begin: Alignment.bottomLeft,
+                end: Alignment.topRight,
               ),
-
-              const SizedBox(width: 20),
-
-              // Text
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      category.title,
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      category.subtitle,
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: Colors.white70,
-                      ),
-                    ),
-                  ],
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                // Icon circle
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: category.color,
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: Icon(category.icon, color: Colors.white, size: 26),
                 ),
-              ),
 
-              // Arrow
-              const Icon(Icons.arrow_forward_ios_rounded,
-                  color: Colors.white54, size: 18),
-            ],
+                const SizedBox(width: 16),
+
+                // Text
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text(
+                        category.title,
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        category.subtitle,
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          color: Colors.white70,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // Arrow
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 12.0),
+                  child: const Icon(Icons.arrow_forward_ios_rounded,
+                      color: Colors.white70, size: 18),
+                ),
+              ],
+            ),
           ),
         ),
       ),

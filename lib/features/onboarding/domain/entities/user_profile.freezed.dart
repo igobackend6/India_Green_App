@@ -26,6 +26,8 @@ mixin _$UserProfile {
   String get phone => throw _privateConstructorUsedError;
   String get pincode => throw _privateConstructorUsedError;
   List<String> get roles => throw _privateConstructorUsedError;
+  @JsonKey(name: 'avatar_url')
+  String? get avatarUrl => throw _privateConstructorUsedError;
 
   /// Serializes this UserProfile to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -50,6 +52,7 @@ abstract class $UserProfileCopyWith<$Res> {
     String phone,
     String pincode,
     List<String> roles,
+    @JsonKey(name: 'avatar_url') String? avatarUrl,
   });
 }
 
@@ -73,6 +76,7 @@ class _$UserProfileCopyWithImpl<$Res, $Val extends UserProfile>
     Object? phone = null,
     Object? pincode = null,
     Object? roles = null,
+    Object? avatarUrl = freezed,
   }) {
     return _then(
       _value.copyWith(
@@ -96,6 +100,10 @@ class _$UserProfileCopyWithImpl<$Res, $Val extends UserProfile>
                 ? _value.roles
                 : roles // ignore: cast_nullable_to_non_nullable
                       as List<String>,
+            avatarUrl: freezed == avatarUrl
+                ? _value.avatarUrl
+                : avatarUrl // ignore: cast_nullable_to_non_nullable
+                      as String?,
           )
           as $Val,
     );
@@ -117,6 +125,7 @@ abstract class _$$UserProfileImplCopyWith<$Res>
     String phone,
     String pincode,
     List<String> roles,
+    @JsonKey(name: 'avatar_url') String? avatarUrl,
   });
 }
 
@@ -139,6 +148,7 @@ class __$$UserProfileImplCopyWithImpl<$Res>
     Object? phone = null,
     Object? pincode = null,
     Object? roles = null,
+    Object? avatarUrl = freezed,
   }) {
     return _then(
       _$UserProfileImpl(
@@ -162,6 +172,10 @@ class __$$UserProfileImplCopyWithImpl<$Res>
             ? _value._roles
             : roles // ignore: cast_nullable_to_non_nullable
                   as List<String>,
+        avatarUrl: freezed == avatarUrl
+            ? _value.avatarUrl
+            : avatarUrl // ignore: cast_nullable_to_non_nullable
+                  as String?,
       ),
     );
   }
@@ -176,6 +190,7 @@ class _$UserProfileImpl implements _UserProfile {
     required this.phone,
     required this.pincode,
     required final List<String> roles,
+    @JsonKey(name: 'avatar_url') this.avatarUrl,
   }) : _roles = roles;
 
   factory _$UserProfileImpl.fromJson(Map<String, dynamic> json) =>
@@ -198,8 +213,12 @@ class _$UserProfileImpl implements _UserProfile {
   }
 
   @override
+  @JsonKey(name: 'avatar_url')
+  final String? avatarUrl;
+
+  @override
   String toString() {
-    return 'UserProfile(id: $id, name: $name, phone: $phone, pincode: $pincode, roles: $roles)';
+    return 'UserProfile(id: $id, name: $name, phone: $phone, pincode: $pincode, roles: $roles, avatarUrl: $avatarUrl)';
   }
 
   @override
@@ -211,7 +230,9 @@ class _$UserProfileImpl implements _UserProfile {
             (identical(other.name, name) || other.name == name) &&
             (identical(other.phone, phone) || other.phone == phone) &&
             (identical(other.pincode, pincode) || other.pincode == pincode) &&
-            const DeepCollectionEquality().equals(other._roles, _roles));
+            const DeepCollectionEquality().equals(other._roles, _roles) &&
+            (identical(other.avatarUrl, avatarUrl) ||
+                other.avatarUrl == avatarUrl));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -223,6 +244,7 @@ class _$UserProfileImpl implements _UserProfile {
     phone,
     pincode,
     const DeepCollectionEquality().hash(_roles),
+    avatarUrl,
   );
 
   /// Create a copy of UserProfile
@@ -246,6 +268,7 @@ abstract class _UserProfile implements UserProfile {
     required final String phone,
     required final String pincode,
     required final List<String> roles,
+    @JsonKey(name: 'avatar_url') final String? avatarUrl,
   }) = _$UserProfileImpl;
 
   factory _UserProfile.fromJson(Map<String, dynamic> json) =
@@ -261,6 +284,9 @@ abstract class _UserProfile implements UserProfile {
   String get pincode;
   @override
   List<String> get roles;
+  @override
+  @JsonKey(name: 'avatar_url')
+  String? get avatarUrl;
 
   /// Create a copy of UserProfile
   /// with the given fields replaced by the non-null parameter values.

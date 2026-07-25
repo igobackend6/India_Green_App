@@ -121,7 +121,7 @@ abstract class AppLocalizations {
   /// No description provided for @navMarket.
   ///
   /// In en, this message translates to:
-  /// **'AgriMart'**
+  /// **'Products'**
   String get navMarket;
 
   /// No description provided for @navMandi.
@@ -129,6 +129,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Mandi'**
   String get navMandi;
+
+  /// No description provided for @navServices.
+  ///
+  /// In en, this message translates to:
+  /// **'Services'**
+  String get navServices;
 
   /// No description provided for @navAiDoc.
   ///
@@ -463,7 +469,7 @@ abstract class AppLocalizations {
   /// No description provided for @igoBrands.
   ///
   /// In en, this message translates to:
-  /// **'IGO Universe Brands'**
+  /// **'IGO GROUPS'**
   String get igoBrands;
 
   /// No description provided for @viewAll.
@@ -637,32 +643,38 @@ abstract class AppLocalizations {
   /// No description provided for @seedsCategory.
   ///
   /// In en, this message translates to:
-  /// **'Seeds'**
+  /// **'Agri Farming\nInputs'**
   String get seedsCategory;
 
-  /// No description provided for @fertilizersCategory.
+  /// No description provided for @polyhouseCategory.
   ///
   /// In en, this message translates to:
-  /// **'Fertilizers'**
-  String get fertilizersCategory;
+  /// **'Polyhouse\nStructure'**
+  String get polyhouseCategory;
 
-  /// No description provided for @pesticidesCategory.
+  /// No description provided for @horticultureCatalogCategory.
   ///
   /// In en, this message translates to:
-  /// **'Pesticides'**
-  String get pesticidesCategory;
+  /// **'Horticulture\nCatalog'**
+  String get horticultureCatalogCategory;
 
-  /// No description provided for @toolsCategory.
+  /// No description provided for @controlAutomationCategory.
   ///
   /// In en, this message translates to:
-  /// **'Tools'**
-  String get toolsCategory;
+  /// **'Control &\nAutomation'**
+  String get controlAutomationCategory;
 
-  /// No description provided for @saplingsCategory.
+  /// No description provided for @digitalAgriCategory.
   ///
   /// In en, this message translates to:
-  /// **'Saplings'**
-  String get saplingsCategory;
+  /// **'Digital Agri\n& IoT'**
+  String get digitalAgriCategory;
+
+  /// No description provided for @postHarvestLegacyCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Post-Harvest\n& Legacy'**
+  String get postHarvestLegacyCategory;
 
   /// No description provided for @featuredProducts.
   ///
@@ -735,6 +747,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Projects'**
   String get navProjects;
+
+  /// No description provided for @navCourse.
+  ///
+  /// In en, this message translates to:
+  /// **'Course'**
+  String get navCourse;
 
   /// No description provided for @projectsTitle.
   ///

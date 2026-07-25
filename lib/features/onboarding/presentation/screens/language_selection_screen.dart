@@ -186,7 +186,7 @@ class _LanguageSelectionScreenState
                   onPressed: () {
                     ref.read(localeProvider.notifier).setLanguage(_selected);
                     ref.read(authProvider.notifier).setLanguage(_selected);
-                    context.go(Routes.roleSelect);
+                    context.go(Routes.otpLogin);
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.harvestGold,

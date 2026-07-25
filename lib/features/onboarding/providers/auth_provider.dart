@@ -1,6 +1,8 @@
+import 'dart:async';
+import 'dart:io';
+
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'dart:async';
 
 import '../../../core/storage/hive_service.dart';
 import '../../../core/services/supabase_service.dart';
@@ -29,10 +31,14 @@ class AuthState {
     this.selectedLanguage = 'English',
   });
 
+  // Sentinel so copyWith can distinguish "clear error" (pass null) from
+  // "leave error unchanged" (omit the parameter entirely).
+  static const _keep = Object();
+
   AuthState copyWith({
     bool? isAuthenticated,
     bool? isLoading,
-    String? error,
+    Object? error = _keep,      // omit → keep existing; pass null → clear
     UserProfile? profile,
     List<String>? selectedRoles,
     String? selectedLanguage,
@@ -40,7 +46,7 @@ class AuthState {
     return AuthState(
       isAuthenticated: isAuthenticated ?? this.isAuthenticated,
       isLoading: isLoading ?? this.isLoading,
-      error: error, // Can be null, copyWith should probably allow clearing it, but we can just use another approach or rely on creating a new state.
+      error: identical(error, _keep) ? this.error : error as String?,
       profile: profile ?? this.profile,
       selectedRoles: selectedRoles ?? this.selectedRoles,
       selectedLanguage: selectedLanguage ?? this.selectedLanguage,
@@ -217,6 +223,68 @@ class Auth extends _$Auth {
       failure: (failure) {
         state = state.copyWith(isLoading: false, error: failure.message);
         return false;
+      },
+    );
+  }
+
+  /// Upload a profile photo to Supabase Storage and persist the URL.
+  /// Returns the public URL on success, or throws with an error message.
+  Future<String> uploadAvatar(File imageFile) async {
+    final client = ref.read(supabaseServiceProvider).client;
+    final userId = client.auth.currentUser?.id;
+    if (userId == null) throw Exception('Not authenticated — please log in again.');
+
+    state = state.copyWith(isLoading: true, error: null);
+
+    final authRepo = ref.read(authRepositoryProvider);
+    final result = await authRepo.uploadAvatar(
+      userId: userId,
+      imageFile: imageFile,
+    );
+
+    return result.when(
+      success: (url) {
+        if (state.profile != null) {
+          state = state.copyWith(
+            isLoading: false,
+            profile: state.profile!.copyWith(avatarUrl: url),
+          );
+        } else {
+          state = state.copyWith(isLoading: false);
+        }
+        return url;
+      },
+      failure: (failure) {
+        state = state.copyWith(isLoading: false, error: failure.message);
+        throw Exception(failure.message);
+      },
+    );
+  }
+
+  /// Remove the profile photo from Supabase Storage and clear the URL.
+  Future<void> removeAvatar() async {
+    final client = ref.read(supabaseServiceProvider).client;
+    final userId = client.auth.currentUser?.id;
+    if (userId == null) return;
+
+    state = state.copyWith(isLoading: true);
+
+    final authRepo = ref.read(authRepositoryProvider);
+    final result = await authRepo.removeAvatar(userId: userId);
+
+    result.when(
+      success: (_) {
+        if (state.profile != null) {
+          state = state.copyWith(
+            isLoading: false,
+            profile: state.profile!.copyWith(avatarUrl: null),
+          );
+        } else {
+          state = state.copyWith(isLoading: false);
+        }
+      },
+      failure: (failure) {
+        state = state.copyWith(isLoading: false, error: failure.message);
       },
     );
   }

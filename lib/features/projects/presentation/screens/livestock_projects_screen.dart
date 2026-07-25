@@ -2,20 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../core/theme/app_colors.dart';
+import '../../../../../core/router/route_names.dart';
+import 'project_subcategory_screen.dart';
 
 // ── Data ─────────────────────────────────────────────────────────────────────
+
+typedef _ProjectItem = ({String name, String? url, String? image});
 
 class _SubCategory {
   final String title;
   final IconData icon;
   final Color color;
-  final List<String> items;
+  final List<_ProjectItem> items;
+  final String? image;
   const _SubCategory({
     required this.title,
     required this.icon,
     required this.color,
     required this.items,
+    this.image,
   });
 }
 
@@ -24,66 +29,57 @@ const _kSubCategories = <_SubCategory>[
     title: 'Goat Farming',
     icon: Icons.pets_rounded,
     color: Color(0xFF558B2F),
+    image: 'assets/images/projects/Goat Farming.png',
     items: [
-      'Commercial Goat Farming',
-      'Integrated Goat Farming',
+      (name: 'Commercial Goat Farming',  url: 'https://www.igoagritechfarms.in/projects/livestock/goat/commercial', image: 'assets/images/projects/Livestock Farming Projects/Goat Farming/Commercial Goat Farming.webp'),
+      (name: 'Integrated Goat Farming',  url: 'https://www.igoagritechfarms.in/projects/livestock/goat/integrated', image: 'assets/images/projects/Livestock Farming Projects/Goat Farming/Integrated Goat Farming.webp'),
     ],
   ),
   _SubCategory(
     title: 'Sheep Farming',
     icon: Icons.blur_circular_rounded,
     color: Color(0xFF6D4C41),
+    image: 'assets/images/projects/Sheep Farming.png',
     items: [
-      'Commercial Sheep Farming',
+      (name: 'Commercial Sheep Farming',  url: 'https://www.igoagritechfarms.in/projects/livestock/sheep/commercial', image: 'assets/images/projects/Livestock Farming Projects/Sheep Farming/Commercial Sheep Farming.webp'),
     ],
   ),
   _SubCategory(
     title: 'Dairy Farming',
     icon: Icons.local_drink_rounded,
     color: Color(0xFF1565C0),
+    image: 'assets/images/projects/Dairy Farming.png',
     items: [
-      'Dairy Farm Setup',
-      'Automated Dairy Systems',
+      (name: 'Dairy Farm Setup',        url: 'https://www.igoagritechfarms.in/projects/livestock/dairy/setup', image: 'assets/images/projects/Livestock Farming Projects/Dairy Farming/Dairy Farm Setup.webp'),
+      (name: 'Automated Dairy Systems', url: 'https://www.igoagritechfarms.in/projects/livestock/dairy/automated', image: 'assets/images/projects/Livestock Farming Projects/Dairy Farming/Automated Dairy Systems.webp'),
     ],
   ),
   _SubCategory(
     title: 'Poultry Farming',
     icon: Icons.egg_rounded,
     color: Color(0xFFE65100),
+    image: 'assets/images/projects/Poultry Farming.png',
     items: [
-      'Broiler Chicken Farms',
-      'Layer Chicken Farms',
+      (name: 'Broiler Chicken Farms',  url: 'https://www.igoagritechfarms.in/projects/livestock/poultry/broiler', image: 'assets/images/projects/Livestock Farming Projects/Poultry Farming/Broiler Chicken Farms.webp'),
+      (name: 'Layer Chicken Farms',    url: 'https://www.igoagritechfarms.in/projects/livestock/poultry/layer', image: 'assets/images/projects/Livestock Farming Projects/Poultry Farming/Layer Chicken Farms.webp'),
     ],
   ),
   _SubCategory(
     title: 'Integrated Livestock Farming',
     icon: Icons.hub_rounded,
     color: Color(0xFF37474F),
+    image: 'assets/images/projects/Integrated Livestock Farming.png',
     items: [
-      'Goat + Fish Farming',
-      'Dairy + Crop Farming',
+      (name: 'Goat + Fish Farming',   url: 'https://www.igoagritechfarms.in/projects/livestock/integrated/goat-fish', image: 'assets/images/projects/Livestock Farming Projects/Integrated Livestock Farming/Goat + Fish Farming.webp'),
+      (name: 'Dairy + Crop Farming',  url: 'https://www.igoagritechfarms.in/projects/livestock/integrated/dairy-crop', image: 'assets/images/projects/Livestock Farming Projects/Integrated Livestock Farming/Dairy + Crop Farming.webp'),
     ],
   ),
 ];
 
 // ── Screen ────────────────────────────────────────────────────────────────────
 
-class LivestockProjectsScreen extends StatefulWidget {
+class LivestockProjectsScreen extends StatelessWidget {
   const LivestockProjectsScreen({super.key});
-
-  @override
-  State<LivestockProjectsScreen> createState() =>
-      _LivestockProjectsScreenState();
-}
-
-class _LivestockProjectsScreenState extends State<LivestockProjectsScreen> {
-  late List<bool> _expanded;
-
-  @override
-  void initState() {
-    super.initState();
-    _expanded = List.filled(_kSubCategories.length, true);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -117,23 +113,6 @@ class _LivestockProjectsScreenState extends State<LivestockProjectsScreen> {
             ),
           ],
         ),
-        actions: [
-          IconButton(
-            tooltip: 'Toggle all',
-            icon: Icon(
-              _expanded.every((e) => e)
-                  ? Icons.unfold_less_rounded
-                  : Icons.unfold_more_rounded,
-            ),
-            onPressed: () {
-              final allExpanded = _expanded.every((e) => e);
-              setState(() {
-                _expanded =
-                    List.filled(_kSubCategories.length, !allExpanded);
-              });
-            },
-          ),
-        ],
       ),
       body: ListView.builder(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -145,9 +124,6 @@ class _LivestockProjectsScreenState extends State<LivestockProjectsScreen> {
             child: _SubCategoryCard(
               category: cat,
               index: index,
-              isExpanded: _expanded[index],
-              onToggle: () =>
-                  setState(() => _expanded[index] = !_expanded[index]),
             ),
           );
         },
@@ -161,14 +137,10 @@ class _LivestockProjectsScreenState extends State<LivestockProjectsScreen> {
 class _SubCategoryCard extends StatelessWidget {
   final _SubCategory category;
   final int index;
-  final bool isExpanded;
-  final VoidCallback onToggle;
 
   const _SubCategoryCard({
     required this.category,
     required this.index,
-    required this.isExpanded,
-    required this.onToggle,
   });
 
   @override
@@ -190,74 +162,59 @@ class _SubCategoryCard extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
-        child: Column(
-          children: [
-            InkWell(
-              onTap: onToggle,
-              child: Container(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 16, vertical: 14),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      category.color,
-                      category.color.withValues(alpha: 0.8),
-                    ],
-                    begin: Alignment.centerLeft,
-                    end: Alignment.centerRight,
-                  ),
-                ),
-                child: Row(
+        child: InkWell(
+          onTap: () {
+            context.push(
+              Routes.projectSubCategory,
+              extra: {
+                'title': category.title,
+                'color': category.color,
+                'items': category.items.map((i) => ProjectItemData(name: i.name, url: i.url, image: i.image)).toList(),
+              },
+            );
+          },
+          child: category.image != null
+              ? Stack(
                   children: [
+                    Image.asset(
+                      category.image!,
+                      height: 110,
+                      width: double.infinity,
+                      fit: BoxFit.cover,
+                    ),
                     Container(
-                      width: 40,
-                      height: 40,
+                      height: 110,
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16, vertical: 14),
                       decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.2),
-                        borderRadius: BorderRadius.circular(10),
+                        gradient: LinearGradient(
+                          colors: [
+                            category.color.withValues(alpha: 0.82),
+                            category.color.withValues(alpha: 0.50),
+                          ],
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter,
+                        ),
                       ),
-                      child: Icon(category.icon,
-                          color: Colors.white, size: 22),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            category.title,
-                            style: theme.textTheme.titleSmall?.copyWith(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            '${category.items.length} projects',
-                            style: theme.textTheme.labelSmall
-                                ?.copyWith(color: Colors.white70),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Icon(
-                      isExpanded
-                          ? Icons.keyboard_arrow_up_rounded
-                          : Icons.keyboard_arrow_down_rounded,
-                      color: Colors.white70,
+                      child: _buildHeaderRow(theme),
                     ),
                   ],
+                )
+              : Container(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 16, vertical: 14),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        category.color,
+                        category.color.withValues(alpha: 0.8),
+                      ],
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
+                  ),
+                  child: _buildHeaderRow(theme),
                 ),
-              ),
-            ),
-            AnimatedCrossFade(
-              firstChild: _buildItems(context, theme),
-              secondChild: const SizedBox(width: double.infinity),
-              crossFadeState: isExpanded
-                  ? CrossFadeState.showFirst
-                  : CrossFadeState.showSecond,
-              duration: const Duration(milliseconds: 200),
-            ),
-          ],
         ),
       ),
     )
@@ -266,56 +223,44 @@ class _SubCategoryCard extends StatelessWidget {
         .slideY(begin: 0.1);
   }
 
-  Widget _buildItems(BuildContext context, ThemeData theme) {
-    return Column(
-      children: category.items.asMap().entries.map((entry) {
-        final i = entry.key;
-        final item = entry.value;
-        final isLast = i == category.items.length - 1;
-        return InkWell(
-          onTap: () {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(item),
-                duration: const Duration(seconds: 1),
-                behavior: SnackBarBehavior.floating,
-              ),
-            );
-          },
-          child: Container(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-            decoration: BoxDecoration(
-              border: isLast
-                  ? null
-                  : Border(
-                      bottom: BorderSide(
-                        color: theme.dividerColor.withValues(alpha: 0.5),
-                      ),
-                    ),
-            ),
-            child: Row(
-              children: [
-                Container(
-                  width: 8,
-                  height: 8,
-                  decoration: BoxDecoration(
-                    color: category.color.withValues(alpha: 0.7),
-                    shape: BoxShape.circle,
-                  ),
-                ),
-                const SizedBox(width: 14),
-                Expanded(child: Text(item, style: theme.textTheme.bodyMedium)),
-                Icon(
-                  Icons.arrow_forward_ios_rounded,
-                  size: 14,
-                  color: theme.colorScheme.onSurface.withValues(alpha: 0.3),
-                ),
-              ],
-            ),
+  Widget _buildHeaderRow(ThemeData theme) {
+    return Row(
+      children: [
+        Container(
+          width: 40,
+          height: 40,
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: 0.2),
+            borderRadius: BorderRadius.circular(10),
           ),
-        );
-      }).toList(),
+          child: Icon(category.icon, color: Colors.white, size: 22),
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                category.title,
+                style: theme.textTheme.titleSmall?.copyWith(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                '${category.items.length} projects',
+                style: theme.textTheme.labelSmall
+                    ?.copyWith(color: Colors.white70),
+              ),
+            ],
+          ),
+        ),
+        const Icon(
+          Icons.arrow_forward_ios_rounded,
+          color: Colors.white70,
+        ),
+      ],
     );
   }
 }

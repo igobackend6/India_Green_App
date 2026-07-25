@@ -2,20 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../core/theme/app_colors.dart';
+import '../../../../../core/router/route_names.dart';
+import 'project_subcategory_screen.dart';
 
 // ── Data ─────────────────────────────────────────────────────────────────────
+
+typedef _ProjectItem = ({String name, String? url, String? image});
 
 class _SubCategory {
   final String title;
   final IconData icon;
   final Color color;
-  final List<String> items;
+  final List<_ProjectItem> items;
+  final String? image;
   const _SubCategory({
     required this.title,
     required this.icon,
     required this.color,
     required this.items,
+    this.image,
   });
 }
 
@@ -24,67 +29,56 @@ const _kSubCategories = <_SubCategory>[
     title: 'Farm Infrastructure Projects',
     icon: Icons.warehouse_rounded,
     color: Color(0xFF37474F),
+    image: 'assets/images/projects/Farm Infrastructure Projects.jpg',
     items: [
-      'Cold Storage',
-      'Pack House',
-      'Farm Buildings',
-      'Farm Roads',
+      (name: 'Cold Storage',   url: 'https://www.igoagritechfarms.in/projects/engineering/infrastructure/cold-storage', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Cold Storage.webp'),
+      (name: 'Pack House',     url: 'https://www.igoagritechfarms.in/projects/engineering/infrastructure/pack-house', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Pack House.webp'),
+      (name: 'Farm Buildings', url: 'https://www.igoagritechfarms.in/projects/engineering/infrastructure/buildings', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Farm Buildings.webp'),
+      (name: 'Farm Roads',     url: 'https://www.igoagritechfarms.in/projects/engineering/infrastructure/roads', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Farm Roads.webp'),
     ],
   ),
   _SubCategory(
     title: 'Water Management Projects',
     icon: Icons.water_drop_rounded,
     color: Color(0xFF0277BD),
+    image: 'assets/images/projects/Water Management Projects.jpg',
     items: [
-      'Rainwater Harvesting',
-      'Pond Liner Installation',
-      'Farm Irrigation Systems',
-      'Borewell & Water Storage Systems',
+      (name: 'Rainwater Harvesting',          url: 'https://www.igoagritechfarms.in/projects/engineering/water/rainwater', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Rainwater Harvesting.webp'),
+      (name: 'Pond Liner Installation',        url: 'https://www.igoagritechfarms.in/projects/engineering/water/pond-liner', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Pond Liner Installation.webp'),
+      (name: 'Farm Irrigation Systems',        url: 'https://www.igoagritechfarms.in/projects/engineering/water/irrigation', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Farm Irrigation Systems.webp'),
+      (name: 'Borewell & Water Storage Systems', url: 'https://www.igoagritechfarms.in/projects/engineering/water/borewell', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Borewell & Water Storage Systems.webp'),
     ],
   ),
   _SubCategory(
     title: 'Solar Agriculture Projects',
     icon: Icons.wb_sunny_rounded,
     color: Color(0xFFF57F17),
+    image: 'assets/images/projects/Solar Agriculture Projects.jpeg',
     items: [
-      'Solar Crop Dryer',
-      'Solar Heater',
-      'Solar Fencing',
-      'Solar Lighting',
+      (name: 'Solar Crop Dryer', url: 'https://www.igoagritechfarms.in/projects/engineering/solar/crop-dryer', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Crop Dryer.webp'),
+      (name: 'Solar Heater',     url: 'https://www.igoagritechfarms.in/projects/engineering/solar/heater', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Heater.webp'),
+      (name: 'Solar Fencing',    url: 'https://www.igoagritechfarms.in/projects/engineering/solar/fencing', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Fencing.webp'),
+      (name: 'Solar Lighting',   url: 'https://www.igoagritechfarms.in/projects/engineering/solar/lighting', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Lighting.webp'),
     ],
   ),
   _SubCategory(
     title: 'Farm Development Projects',
     icon: Icons.map_rounded,
     color: Color(0xFF4E342E),
+    image: 'assets/images/projects/Farm Development Projects.jpeg',
     items: [
-      'Land Surveying',
-      'Topographic Mapping',
-      'Contour Mapping',
-      'Land Leveling',
+      (name: 'Land Surveying',       url: 'https://www.igoagritechfarms.in/projects/engineering/development/surveying', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Land Surveying.webp'),
+      (name: 'Topographic Mapping',  url: 'https://www.igoagritechfarms.in/projects/engineering/development/topographic', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Topographic Mapping.webp'),
+      (name: 'Contour Mapping',      url: 'https://www.igoagritechfarms.in/projects/engineering/development/contour', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Contour Mapping.webp'),
+      (name: 'Land Leveling',        url: 'https://www.igoagritechfarms.in/projects/engineering/development/leveling', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Land Leveling.webp'),
     ],
   ),
 ];
 
 // ── Screen ────────────────────────────────────────────────────────────────────
 
-class FarmEngineeringProjectsScreen extends StatefulWidget {
+class FarmEngineeringProjectsScreen extends StatelessWidget {
   const FarmEngineeringProjectsScreen({super.key});
-
-  @override
-  State<FarmEngineeringProjectsScreen> createState() =>
-      _FarmEngineeringProjectsScreenState();
-}
-
-class _FarmEngineeringProjectsScreenState
-    extends State<FarmEngineeringProjectsScreen> {
-  late List<bool> _expanded;
-
-  @override
-  void initState() {
-    super.initState();
-    _expanded = List.filled(_kSubCategories.length, true);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -118,23 +112,6 @@ class _FarmEngineeringProjectsScreenState
             ),
           ],
         ),
-        actions: [
-          IconButton(
-            tooltip: 'Toggle all',
-            icon: Icon(
-              _expanded.every((e) => e)
-                  ? Icons.unfold_less_rounded
-                  : Icons.unfold_more_rounded,
-            ),
-            onPressed: () {
-              final allExpanded = _expanded.every((e) => e);
-              setState(() {
-                _expanded =
-                    List.filled(_kSubCategories.length, !allExpanded);
-              });
-            },
-          ),
-        ],
       ),
       body: ListView.builder(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -146,9 +123,6 @@ class _FarmEngineeringProjectsScreenState
             child: _SubCategoryCard(
               category: cat,
               index: index,
-              isExpanded: _expanded[index],
-              onToggle: () =>
-                  setState(() => _expanded[index] = !_expanded[index]),
             ),
           );
         },
@@ -162,14 +136,10 @@ class _FarmEngineeringProjectsScreenState
 class _SubCategoryCard extends StatelessWidget {
   final _SubCategory category;
   final int index;
-  final bool isExpanded;
-  final VoidCallback onToggle;
 
   const _SubCategoryCard({
     required this.category,
     required this.index,
-    required this.isExpanded,
-    required this.onToggle,
   });
 
   @override
@@ -191,74 +161,59 @@ class _SubCategoryCard extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
-        child: Column(
-          children: [
-            InkWell(
-              onTap: onToggle,
-              child: Container(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 16, vertical: 14),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      category.color,
-                      category.color.withValues(alpha: 0.8),
-                    ],
-                    begin: Alignment.centerLeft,
-                    end: Alignment.centerRight,
-                  ),
-                ),
-                child: Row(
+        child: InkWell(
+          onTap: () {
+            context.push(
+              Routes.projectSubCategory,
+              extra: {
+                'title': category.title,
+                'color': category.color,
+                'items': category.items.map((i) => ProjectItemData(name: i.name, url: i.url, image: i.image)).toList(),
+              },
+            );
+          },
+          child: category.image != null
+              ? Stack(
                   children: [
+                    Image.asset(
+                      category.image!,
+                      height: 110,
+                      width: double.infinity,
+                      fit: BoxFit.cover,
+                    ),
                     Container(
-                      width: 40,
-                      height: 40,
+                      height: 110,
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16, vertical: 14),
                       decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.2),
-                        borderRadius: BorderRadius.circular(10),
+                        gradient: LinearGradient(
+                          colors: [
+                            category.color.withValues(alpha: 0.82),
+                            category.color.withValues(alpha: 0.50),
+                          ],
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter,
+                        ),
                       ),
-                      child: Icon(category.icon,
-                          color: Colors.white, size: 22),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            category.title,
-                            style: theme.textTheme.titleSmall?.copyWith(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            '${category.items.length} projects',
-                            style: theme.textTheme.labelSmall
-                                ?.copyWith(color: Colors.white70),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Icon(
-                      isExpanded
-                          ? Icons.keyboard_arrow_up_rounded
-                          : Icons.keyboard_arrow_down_rounded,
-                      color: Colors.white70,
+                      child: _buildHeaderRow(theme),
                     ),
                   ],
+                )
+              : Container(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 16, vertical: 14),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        category.color,
+                        category.color.withValues(alpha: 0.8),
+                      ],
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
+                  ),
+                  child: _buildHeaderRow(theme),
                 ),
-              ),
-            ),
-            AnimatedCrossFade(
-              firstChild: _buildItems(context, theme),
-              secondChild: const SizedBox(width: double.infinity),
-              crossFadeState: isExpanded
-                  ? CrossFadeState.showFirst
-                  : CrossFadeState.showSecond,
-              duration: const Duration(milliseconds: 200),
-            ),
-          ],
         ),
       ),
     )
@@ -267,56 +222,44 @@ class _SubCategoryCard extends StatelessWidget {
         .slideY(begin: 0.1);
   }
 
-  Widget _buildItems(BuildContext context, ThemeData theme) {
-    return Column(
-      children: category.items.asMap().entries.map((entry) {
-        final i = entry.key;
-        final item = entry.value;
-        final isLast = i == category.items.length - 1;
-        return InkWell(
-          onTap: () {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(item),
-                duration: const Duration(seconds: 1),
-                behavior: SnackBarBehavior.floating,
-              ),
-            );
-          },
-          child: Container(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-            decoration: BoxDecoration(
-              border: isLast
-                  ? null
-                  : Border(
-                      bottom: BorderSide(
-                        color: theme.dividerColor.withValues(alpha: 0.5),
-                      ),
-                    ),
-            ),
-            child: Row(
-              children: [
-                Container(
-                  width: 8,
-                  height: 8,
-                  decoration: BoxDecoration(
-                    color: category.color.withValues(alpha: 0.7),
-                    shape: BoxShape.circle,
-                  ),
-                ),
-                const SizedBox(width: 14),
-                Expanded(child: Text(item, style: theme.textTheme.bodyMedium)),
-                Icon(
-                  Icons.arrow_forward_ios_rounded,
-                  size: 14,
-                  color: theme.colorScheme.onSurface.withValues(alpha: 0.3),
-                ),
-              ],
-            ),
+  Widget _buildHeaderRow(ThemeData theme) {
+    return Row(
+      children: [
+        Container(
+          width: 40,
+          height: 40,
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: 0.2),
+            borderRadius: BorderRadius.circular(10),
           ),
-        );
-      }).toList(),
+          child: Icon(category.icon, color: Colors.white, size: 22),
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                category.title,
+                style: theme.textTheme.titleSmall?.copyWith(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                '${category.items.length} projects',
+                style: theme.textTheme.labelSmall
+                    ?.copyWith(color: Colors.white70),
+              ),
+            ],
+          ),
+        ),
+        const Icon(
+          Icons.arrow_forward_ios_rounded,
+          color: Colors.white70,
+        ),
+      ],
     );
   }
 }

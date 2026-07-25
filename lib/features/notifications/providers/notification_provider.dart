@@ -70,52 +70,34 @@ class NotificationState {
 /// Simulated notification pool matching the Kotlin app's alerts.
 const _simulationPool = [
   (
-    title: '⚠️ Sudden Rain Advisory',
-    desc: 'Heavy rain expected in Salem district within 3 hours. Cover harvested produce!',
-    type: NotificationType.warning,
+    title: '🚜 New Livestock Projects',
+    desc: 'Explore our newly added livestock setups and boost your farm\'s productivity.',
+    type: NotificationType.info,
+    route: '/projects',
+  ),
+  (
+    title: '📦 Organic Products Restocked',
+    desc: 'Premium organic nutrients are back in stock at IGO Agri Mart. Order now!',
+    type: NotificationType.success,
+    route: '/products',
+  ),
+  (
+    title: '🔬 Soil Testing Service',
+    desc: 'Book a comprehensive soil test today through Tech Farming Expert.',
+    type: NotificationType.info,
+    route: '/services',
+  ),
+  (
+    title: '🎓 New Course: Hydroponics',
+    desc: 'Enroll in the Modern Hydroponics certification course at IGO Academy.',
+    type: NotificationType.info,
+    route: '/courses',
+  ),
+  (
+    title: '🌾 Discover IGO Farmlands',
+    desc: 'Invest in premium, high-yield farmlands and secure consistent returns.',
+    type: NotificationType.success,
     route: '/home',
-  ),
-  (
-    title: '⚖️ Mandi Basmati Price Spike',
-    desc: 'Premium paddy surged to ₹4,550/Qtl at Salem Mandi, hitting your target!',
-    type: NotificationType.urgent,
-    route: '/mandi',
-  ),
-  (
-    title: '💰 PM-KISAN Subsidy Transferred',
-    desc: '₹2,500 Central Scheme Grant credited to your IGO Farm Wallet.',
-    type: NotificationType.success,
-    route: '/hubs/finance',
-  ),
-  (
-    title: '🎓 Academy Certificate',
-    desc: 'Completed the Scientific Paddy Cultivation course. Grab your certificate!',
-    type: NotificationType.success,
-    route: '/hubs/learn',
-  ),
-  (
-    title: '💼 Precision Agri Job Matched',
-    desc: 'IGO Farmlands listed an Operations Lead role matching your profile.',
-    type: NotificationType.info,
-    route: '/hubs/jobs',
-  ),
-  (
-    title: '🤖 Soil Doctor Crop Advice',
-    desc: 'Tomato Septoria leaf spots found. Liquid copper soap spray recommended.',
-    type: NotificationType.info,
-    route: '/ai-doctor',
-  ),
-  (
-    title: '🔥 15% Off Seeds Coupon Live',
-    desc: 'Weekly deals: 15% discount on bio-fertilizers and paddy seeds. Ends tonight!',
-    type: NotificationType.info,
-    route: '/market',
-  ),
-  (
-    title: '🤝 Cold Chain Freight Pickup',
-    desc: 'IGO Logistics truck scheduled near Salem for fresh export loads. Reserve space!',
-    type: NotificationType.urgent,
-    route: '/market',
   ),
 ];
 

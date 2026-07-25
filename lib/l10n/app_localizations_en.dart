@@ -18,10 +18,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get navHome => 'Home';
 
   @override
-  String get navMarket => 'AgriMart';
+  String get navMarket => 'Products';
 
   @override
   String get navMandi => 'Mandi';
+
+  @override
+  String get navServices => 'Services';
 
   @override
   String get navAiDoc => 'AI Doc';
@@ -206,7 +209,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quickActions => 'Quick Actions';
 
   @override
-  String get igoBrands => 'IGO Universe Brands';
+  String get igoBrands => 'IGO GROUPS';
 
   @override
   String get viewAll => 'View All';
@@ -295,19 +298,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aboutApp => 'About INDIA GREEN APP';
 
   @override
-  String get seedsCategory => 'Seeds';
+  String get seedsCategory => 'Agri Farming\nInputs';
 
   @override
-  String get fertilizersCategory => 'Fertilizers';
+  String get polyhouseCategory => 'Polyhouse\nStructure';
 
   @override
-  String get pesticidesCategory => 'Pesticides';
+  String get horticultureCatalogCategory => 'Horticulture\nCatalog';
 
   @override
-  String get toolsCategory => 'Tools';
+  String get controlAutomationCategory => 'Control &\nAutomation';
 
   @override
-  String get saplingsCategory => 'Saplings';
+  String get digitalAgriCategory => 'Digital Agri\n& IoT';
+
+  @override
+  String get postHarvestLegacyCategory => 'Post-Harvest\n& Legacy';
 
   @override
   String get featuredProducts => 'Featured Products';
@@ -345,6 +351,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get navProjects => 'Projects';
+
+  @override
+  String get navCourse => 'Course';
 
   @override
   String get projectsTitle => 'Projects';

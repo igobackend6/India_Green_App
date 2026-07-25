@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../../core/theme/app_colors.dart';
+import '../../../../../core/router/route_names.dart';
 import '../../../../../l10n/app_localizations.dart';
 
 class QuickActionsGrid extends StatelessWidget {
   const QuickActionsGrid({super.key});
 
-  List<({IconData icon, String label, Color color})> _getActions(AppLocalizations l10n) {
+  List<({IconData icon, String label, Color color, String? route})> _getActions(AppLocalizations l10n) {
     return [
-      (icon: Icons.shopping_bag_rounded, label: l10n.buyInputs, color: AppColors.forestGreen),
-      (icon: Icons.sell_rounded,         label: l10n.sellProduce, color: AppColors.growthGreen),
-      (icon: Icons.trending_up_rounded,  label: l10n.mandiPrices, color: AppColors.harvestGold),
-      (icon: Icons.local_hospital_rounded, label: l10n.cropDoctor, color: AppColors.error),
-      (icon: Icons.account_balance_rounded, label: l10n.loanApply, color: const Color(0xFF3B82F6)),
-      (icon: Icons.work_rounded,         label: l10n.agriJobs, color: const Color(0xFF8B5CF6)),
-      (icon: Icons.school_rounded,       label: l10n.igoAcademy, color: const Color(0xFF06B6D4)),
-      (icon: Icons.handshake_rounded,    label: l10n.franchise, color: AppColors.accentGold),
+      (icon: Icons.shopping_bag_rounded,    label: l10n.buyInputs,    color: AppColors.forestGreen,       route: null),
+      (icon: Icons.sell_rounded,            label: l10n.sellProduce,  color: AppColors.growthGreen,        route: null),
+      (icon: Icons.trending_up_rounded,     label: l10n.mandiPrices,  color: AppColors.harvestGold,        route: null),
+      (icon: Icons.local_hospital_rounded,  label: l10n.cropDoctor,   color: AppColors.error,              route: Routes.cropDoctor),
+      (icon: Icons.account_balance_rounded, label: l10n.loanApply,    color: const Color(0xFF3B82F6),      route: null),
+      (icon: Icons.work_rounded,            label: l10n.agriJobs,     color: const Color(0xFF8B5CF6),      route: null),
+      (icon: Icons.school_rounded,          label: l10n.igoAcademy,   color: const Color(0xFF06B6D4),      route: null),
+      (icon: Icons.handshake_rounded,       label: l10n.franchise,    color: AppColors.accentGold,         route: null),
     ];
   }
 
@@ -39,7 +41,7 @@ class QuickActionsGrid extends StatelessWidget {
         final action = actions[index];
         return GestureDetector(
           onTap: () {
-            // Navigation will be wired in Phase 2+
+            if (action.route != null) context.push(action.route!);
           },
           child: Column(
             children: [

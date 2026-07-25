@@ -53,6 +53,8 @@ dependencies:
   # Fonts
   google_fonts: ^6.2.1
   supabase_flutter: ^2.14.2
+  webview_flutter: ^4.14.0
+  geolocator: ^14.0.2
 
 dev_dependencies:
   flutter_test:
@@ -69,9 +71,73 @@ dev_dependencies:
 
   # Testing
   mocktail: ^1.0.4
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   generate: true
   uses-material-design: true
   assets:
     - .env
+    - assets/images/
+    - assets/images/projects/
+    - assets/images/projects/Agri Farming Projects/
+    - assets/images/projects/Aquaculture Farming Projects/
+    - assets/images/projects/Farm Engineering Projects/
+    - assets/images/projects/Livestock Farming Projects/
+    - assets/images/projects/Agri Farming Projects/Floriculture Projects/
+    - assets/images/projects/Agri Farming Projects/Hydroponic Farming Projects/
+    - assets/images/projects/Agri Farming Projects/Medicinal Crop Projects/
+    - assets/images/projects/Agri Farming Projects/Mushroom Farming Projects/
+    - assets/images/projects/Agri Farming Projects/Nursery Projects/
+    - assets/images/projects/Agri Farming Projects/Open Field Cultivation Projects/
+    - assets/images/projects/Agri Farming Projects/Protected Farming Projects/
+    - assets/images/projects/Agri Farming Projects/Urban Farming Projects/
+    - assets/images/projects/Agri Farming Projects/Vegetable Cultivation Projects/
+    - assets/images/projects/Agri Farming Projects/Vertical Farming Projects/
+    - assets/images/projects/Aquaculture Farming Projects/Biofloc Farming Projects/
+    - assets/images/projects/Aquaculture Farming Projects/Crab Farming Projects/
+    - assets/images/projects/Aquaculture Farming Projects/Fish Farming Projects/
+    - assets/images/projects/Aquaculture Farming Projects/Integrated Aquaculture/
+    - assets/images/projects/Aquaculture Farming Projects/Shrimp Farming Projects/
+    - assets/images/projects/Farm Engineering Projects/Farm Development Projects/
+    - assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/
+    - assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/
+    - assets/images/projects/Farm Engineering Projects/Water Management Projects/
+    - assets/images/projects/Livestock Farming Projects/Dairy Farming/
+    - assets/images/projects/Livestock Farming Projects/Goat Farming/
+    - assets/images/projects/Livestock Farming Projects/Integrated Livestock Farming/
+    - assets/images/projects/Livestock Farming Projects/Poultry Farming/
+    - assets/images/projects/Livestock Farming Projects/Sheep Farming/
+    - assets/images/services/
+    - assets/images/services/Services/
+    - assets/images/products/products/Agri-farming/Fruit Seeds/
+    - assets/images/products/products/Agri-farming/Growing Media & Substrates/
+    - assets/images/products/products/Agri-farming/Leafy & Herb Seeds/
+    - assets/images/products/products/Agri-farming/Mulching & Weed Control/
+    - assets/images/products/products/Agri-farming/Plant Growth Regulators/
+    - assets/images/products/products/Agri-farming/Plant Nutrition & Fertilizers/
+    - assets/images/products/products/Agri-farming/Plant Protection(IPM)/
+    - assets/images/products/products/Agri-farming/Vegetable Seeds/
+    - assets/images/products/products/Control & Automation/Dosing & Fertigation/
+    - assets/images/products/products/Control & Automation/Electrical Systems/
+    - assets/images/products/products/Control & Automation/Environmental Controllers/
+    - assets/images/products/products/Control & Automation/Smart Actuators & Motors/
+    - assets/images/products/products/Digital Agri & IOT/Digital Services/
+    - assets/images/products/products/Digital Agri & IOT/IOT Hardware & Nodes/
+    - assets/images/products/products/Digital Agri & IOT/Software & Dashboards/
+    - assets/images/products/products/Horticulture Catalog/Exotic Fruit Crops/
+    - assets/images/products/products/Horticulture Catalog/Flower Crops/
+    - assets/images/products/products/Horticulture Catalog/Medicinal & Herbs/
+    - assets/images/products/products/Horticulture Catalog/Vegetable Crops/
+    - assets/images/products/products/Polyhouse Structure/Climate & Ventilation/
+    - assets/images/products/products/Polyhouse Structure/Greenhouse Covering/
+    - assets/images/products/products/Polyhouse Structure/Insect & Shade Nets/
+    - assets/images/products/products/Polyhouse Structure/Misting & Fogging/
+    - assets/images/products/products/Polyhouse Structure/Plumbing & Distribution/
+    - assets/images/products/products/Polyhouse Structure/Structural Frames & Parts/
+    - assets/images/products/products/post-harvest & legacy/Aquaculture Solutions/
+    - assets/images/products/products/post-harvest & legacy/Harvesting & Cold Chain/
+    - assets/images/products/products/post-harvest & legacy/Livestock Ecosystems/
+    - assets/images/igo academy/
+    - assets/images/IGO Universe Brands/
+    - assets/images/Ad_image/

@@ -3,8 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../core/theme/app_colors.dart';
+import '../../../../core/router/route_names.dart';
 import '../../../notifications/presentation/widgets/heads_up_banner.dart';
 import '../../../notifications/providers/notification_provider.dart';
+import '../../../onboarding/providers/auth_provider.dart';
 import '../../../../l10n/app_localizations.dart';
 
 /// Main app shell with bottom navigation, app bar, and heads-up notification overlay.
@@ -16,11 +18,11 @@ class DashboardShell extends ConsumerWidget {
   // To localize nav items, we need a method instead of a static const list
   List<({IconData icon, String label})> _getNavItems(AppLocalizations l10n) {
     return [
-      (icon: Icons.home_rounded,       label: l10n.navHome),
-      (icon: Icons.storefront_rounded, label: l10n.navMarket),
-      (icon: Icons.trending_up_rounded,label: l10n.navMandi),
-      (icon: Icons.folder_special_rounded, label: l10n.navProjects),
-      (icon: Icons.more_horiz_rounded, label: l10n.navHubs),
+      (icon: Icons.home_rounded,            label: l10n.navHome),
+      (icon: Icons.folder_special_rounded,  label: l10n.navProjects),
+      (icon: Icons.storefront_rounded,      label: l10n.navMarket),
+      (icon: Icons.design_services_rounded, label: l10n.navServices),
+      (icon: Icons.school_rounded,          label: l10n.navCourse),
     ];
   }
 
@@ -37,33 +39,26 @@ class DashboardShell extends ConsumerWidget {
         backgroundColor: AppColors.forestGreen,
         title: Row(
           children: [
-            Container(
-              width: 32,
-              height: 32,
-              decoration: BoxDecoration(
-                color: AppColors.harvestGold,
-                borderRadius: BorderRadius.circular(8),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image.asset(
+                'assets/images/App Logo.jpeg',
+                width: 32,
+                height: 32,
+                fit: BoxFit.cover,
               ),
-              child: const Icon(Icons.spa_rounded,
-                  size: 20, color: AppColors.forestGreen),
             ),
             const SizedBox(width: 10),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(l10n.appTitle,
-                    style: theme.textTheme.titleSmall?.copyWith(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 0.5)),
-                Text(l10n.salemFarmerHub,
-                    style: theme.textTheme.labelSmall
-                        ?.copyWith(color: Colors.white60)),
-              ],
-            ),
+            Text(l10n.appTitle,
+                style: theme.textTheme.titleMedium?.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 0.5)),
           ],
         ),
         actions: [
+          // Hubs profile icon
+          _HubsIconButton(),
           // Notification bell with badge
           Stack(
             children: [
@@ -256,5 +251,43 @@ class DashboardShell extends ConsumerWidget {
         ),
       ),
     );
+  }
+}
+
+// ── Profile icon button — taps directly to Profile screen ────────────────────
+
+class _HubsIconButton extends ConsumerWidget {
+  const _HubsIconButton();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final profile = ref.watch(authProvider).profile;
+    final initials = _initials(profile?.name);
+
+    return IconButton(
+      tooltip: 'My Profile',
+      onPressed: () => context.push(Routes.profile),
+      icon: CircleAvatar(
+        radius: 14,
+        backgroundColor: AppColors.harvestGold,
+        child: Text(
+          initials,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 11,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
+  }
+
+  String _initials(String? name) {
+    if (name == null || name.isEmpty) return 'U';
+    final parts = name.trim().split(' ');
+    if (parts.length >= 2) {
+      return '${parts[0][0]}${parts[1][0]}'.toUpperCase();
+    }
+    return name[0].toUpperCase();
   }
 }

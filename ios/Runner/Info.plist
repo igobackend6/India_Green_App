@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>India Green App needs camera access to photograph your crops for disease diagnosis.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>India Green App needs photo library access to select crop images for disease diagnosis.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>India Green App needs your location to show local weather conditions for farming.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>India Green App needs your location to show local weather conditions for farming.</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>

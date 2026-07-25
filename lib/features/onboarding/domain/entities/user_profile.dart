@@ -11,6 +11,7 @@ class UserProfile with _$UserProfile {
     required String phone,
     required String pincode,
     required List<String> roles,
+    @JsonKey(name: 'avatar_url') String? avatarUrl,
   }) = _UserProfile;
 
   factory UserProfile.fromJson(Map<String, dynamic> json) => _$UserProfileFromJson(json);

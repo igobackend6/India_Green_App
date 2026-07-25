@@ -13,6 +13,7 @@ _$UserProfileImpl _$$UserProfileImplFromJson(Map<String, dynamic> json) =>
       phone: json['phone'] as String,
       pincode: json['pincode'] as String,
       roles: (json['roles'] as List<dynamic>).map((e) => e as String).toList(),
+      avatarUrl: json['avatar_url'] as String?,
     );
 
 Map<String, dynamic> _$$UserProfileImplToJson(_$UserProfileImpl instance) =>
@@ -22,4 +23,5 @@ Map<String, dynamic> _$$UserProfileImplToJson(_$UserProfileImpl instance) =>
       'phone': instance.phone,
       'pincode': instance.pincode,
       'roles': instance.roles,
+      'avatar_url': instance.avatarUrl,
     };

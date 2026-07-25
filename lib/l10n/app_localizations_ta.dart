@@ -18,10 +18,13 @@ class AppLocalizationsTa extends AppLocalizations {
   String get navHome => 'முகப்பு';
 
   @override
-  String get navMarket => 'அக்ரிமார்ட்';
+  String get navMarket => 'தயாரிப்புகள்';
 
   @override
   String get navMandi => 'மண்டி';
+
+  @override
+  String get navServices => 'சேவைகள்';
 
   @override
   String get navAiDoc => 'AI மருத்துவர்';
@@ -206,7 +209,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get quickActions => 'விரைவான செயல்கள்';
 
   @override
-  String get igoBrands => 'IGO யுனிவர்ஸ் பிராண்டுகள்';
+  String get igoBrands => 'IGO குழுக்கள்';
 
   @override
   String get viewAll => 'அனைத்தையும் காண்க';
@@ -299,16 +302,19 @@ class AppLocalizationsTa extends AppLocalizations {
   String get seedsCategory => 'விதைகள்';
 
   @override
-  String get fertilizersCategory => 'உரங்கள்';
+  String get polyhouseCategory => 'Polyhouse Structure';
 
   @override
-  String get pesticidesCategory => 'பூச்சிக்கொல்லிகள்';
+  String get horticultureCatalogCategory => 'Horticulture\nCatalog';
 
   @override
-  String get toolsCategory => 'கருவிகள்';
+  String get controlAutomationCategory => 'Control &\nAutomation';
 
   @override
-  String get saplingsCategory => 'நாற்றுகள்';
+  String get digitalAgriCategory => 'Digital Agri\n& IoT';
+
+  @override
+  String get postHarvestLegacyCategory => 'Post-Harvest\n& Legacy';
 
   @override
   String get featuredProducts => 'சிறப்பு தயாரிப்புகள்';
@@ -346,6 +352,9 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get navProjects => 'திட்டங்கள்';
+
+  @override
+  String get navCourse => 'கோர்ஸ்';
 
   @override
   String get projectsTitle => 'திட்டங்கள்';

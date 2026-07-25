@@ -2,20 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../core/theme/app_colors.dart';
+import '../../../../../core/router/route_names.dart';
+import 'project_subcategory_screen.dart';
 
 // ── Data ─────────────────────────────────────────────────────────────────────
+
+typedef _ProjectItem = ({String name, String? url, String? image});
 
 class _SubCategory {
   final String title;
   final IconData icon;
   final Color color;
-  final List<String> items;
+  final List<_ProjectItem> items;
+  final String? image;
   const _SubCategory({
     required this.title,
     required this.icon,
     required this.color,
     required this.items,
+    this.image,
   });
 }
 
@@ -24,68 +29,58 @@ const _kSubCategories = <_SubCategory>[
     title: 'Fish Farming Projects',
     icon: Icons.set_meal_rounded,
     color: Color(0xFF0277BD),
+    image: 'assets/images/projects/Fish Farming Projects.png',
     items: [
-      'Traditional Fish Farming',
-      'Intensive Fish Farming',
-      'Cage Fish Farming',
+      (name: 'Traditional Fish Farming',  url: 'https://www.igoagritechfarms.in/projects/aquaculture/fish/traditional', image: 'assets/images/projects/Aquaculture Farming Projects/Fish Farming Projects/Traditional Fish Farming.webp'),
+      (name: 'Intensive Fish Farming',    url: 'https://www.igoagritechfarms.in/projects/aquaculture/fish/intensive', image: 'assets/images/projects/Aquaculture Farming Projects/Fish Farming Projects/intensive fish farming.webp'),
+      (name: 'Cage Fish Farming',         url: 'https://www.igoagritechfarms.in/projects/aquaculture/fish/cage', image: 'assets/images/projects/Aquaculture Farming Projects/Fish Farming Projects/Cage Fish Farming.webp'),
     ],
   ),
   _SubCategory(
     title: 'Biofloc Farming Projects',
     icon: Icons.bubble_chart_rounded,
     color: Color(0xFF00838F),
+    image: 'assets/images/projects/Biofloc Farming Projects.png',
     items: [
-      'Biofloc Fish Farming',
-      'Biofloc Shrimp Farming',
+      (name: 'Biofloc Fish Farming',    url: 'https://www.igoagritechfarms.in/projects/aquaculture/biofloc/fish', image: 'assets/images/projects/Aquaculture Farming Projects/Biofloc Farming Projects/Biofloc Fish Farming.webp'),
+      (name: 'Biofloc Shrimp Farming',  url: 'https://www.igoagritechfarms.in/projects/aquaculture/biofloc/shrimp', image: 'assets/images/projects/Aquaculture Farming Projects/Biofloc Farming Projects/Biofloc Shrimp Farming.webp'),
     ],
   ),
   _SubCategory(
     title: 'Shrimp Farming Projects',
     icon: Icons.water_rounded,
     color: Color(0xFF01579B),
+    image: 'assets/images/projects/Shrimp Farming Projects.png',
     items: [
-      'Vannamei Shrimp Farming',
-      'Freshwater Prawn Farming',
+      (name: 'Vannamei Shrimp Farming',    url: 'https://www.igoagritechfarms.in/projects/aquaculture/shrimp/vannamei', image: 'assets/images/projects/Aquaculture Farming Projects/Shrimp Farming Projects/Vannamei Shrimp Farming.webp'),
+      (name: 'Freshwater Prawn Farming',   url: 'https://www.igoagritechfarms.in/projects/aquaculture/shrimp/prawn', image: 'assets/images/projects/Aquaculture Farming Projects/Shrimp Farming Projects/Freshwater Prawn Farming.webp'),
     ],
   ),
   _SubCategory(
     title: 'Crab Farming Projects',
     icon: Icons.pest_control_rounded,
     color: Color(0xFF004D40),
+    image: 'assets/images/projects/Crab Farming Projects.png',
     items: [
-      'Mud Crab Farming',
+      (name: 'Mud Crab Farming',  url: 'https://www.igoagritechfarms.in/projects/aquaculture/crab/mud-crab', image: 'assets/images/projects/Aquaculture Farming Projects/Crab Farming Projects/Mud Crab Farming.webp'),
     ],
   ),
   _SubCategory(
     title: 'Integrated Aquaculture',
     icon: Icons.sync_alt_rounded,
     color: Color(0xFF006064),
+    image: 'assets/images/projects/Integrated Aquaculture.png',
     items: [
-      'Aquaponics Systems',
-      'Integrated Fish + Crop Farming',
+      (name: 'Aquaponics Systems',              url: 'https://www.igoagritechfarms.in/projects/aquaculture/integrated/aquaponics', image: 'assets/images/projects/Aquaculture Farming Projects/Integrated Aquaculture/Aquaponics Systems.webp'),
+      (name: 'Integrated Fish + Crop Farming',  url: 'https://www.igoagritechfarms.in/projects/aquaculture/integrated/fish-crop', image: 'assets/images/projects/Aquaculture Farming Projects/Integrated Aquaculture/Integrated Fish + Crop Farming.webp'),
     ],
   ),
 ];
 
 // ── Screen ────────────────────────────────────────────────────────────────────
 
-class AquacultureProjectsScreen extends StatefulWidget {
+class AquacultureProjectsScreen extends StatelessWidget {
   const AquacultureProjectsScreen({super.key});
-
-  @override
-  State<AquacultureProjectsScreen> createState() =>
-      _AquacultureProjectsScreenState();
-}
-
-class _AquacultureProjectsScreenState
-    extends State<AquacultureProjectsScreen> {
-  late List<bool> _expanded;
-
-  @override
-  void initState() {
-    super.initState();
-    _expanded = List.filled(_kSubCategories.length, true);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -119,23 +114,6 @@ class _AquacultureProjectsScreenState
             ),
           ],
         ),
-        actions: [
-          IconButton(
-            tooltip: 'Toggle all',
-            icon: Icon(
-              _expanded.every((e) => e)
-                  ? Icons.unfold_less_rounded
-                  : Icons.unfold_more_rounded,
-            ),
-            onPressed: () {
-              final allExpanded = _expanded.every((e) => e);
-              setState(() {
-                _expanded =
-                    List.filled(_kSubCategories.length, !allExpanded);
-              });
-            },
-          ),
-        ],
       ),
       body: ListView.builder(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -147,9 +125,6 @@ class _AquacultureProjectsScreenState
             child: _SubCategoryCard(
               category: cat,
               index: index,
-              isExpanded: _expanded[index],
-              onToggle: () =>
-                  setState(() => _expanded[index] = !_expanded[index]),
             ),
           );
         },
@@ -163,14 +138,10 @@ class _AquacultureProjectsScreenState
 class _SubCategoryCard extends StatelessWidget {
   final _SubCategory category;
   final int index;
-  final bool isExpanded;
-  final VoidCallback onToggle;
 
   const _SubCategoryCard({
     required this.category,
     required this.index,
-    required this.isExpanded,
-    required this.onToggle,
   });
 
   @override
@@ -192,74 +163,59 @@ class _SubCategoryCard extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
-        child: Column(
-          children: [
-            InkWell(
-              onTap: onToggle,
-              child: Container(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 16, vertical: 14),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      category.color,
-                      category.color.withValues(alpha: 0.8),
-                    ],
-                    begin: Alignment.centerLeft,
-                    end: Alignment.centerRight,
-                  ),
-                ),
-                child: Row(
+        child: InkWell(
+          onTap: () {
+            context.push(
+              Routes.projectSubCategory,
+              extra: {
+                'title': category.title,
+                'color': category.color,
+                'items': category.items.map((i) => ProjectItemData(name: i.name, url: i.url, image: i.image)).toList(),
+              },
+            );
+          },
+          child: category.image != null
+              ? Stack(
                   children: [
+                    Image.asset(
+                      category.image!,
+                      height: 110,
+                      width: double.infinity,
+                      fit: BoxFit.cover,
+                    ),
                     Container(
-                      width: 40,
-                      height: 40,
+                      height: 110,
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16, vertical: 14),
                       decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.2),
-                        borderRadius: BorderRadius.circular(10),
+                        gradient: LinearGradient(
+                          colors: [
+                            category.color.withValues(alpha: 0.82),
+                            category.color.withValues(alpha: 0.50),
+                          ],
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter,
+                        ),
                       ),
-                      child: Icon(category.icon,
-                          color: Colors.white, size: 22),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            category.title,
-                            style: theme.textTheme.titleSmall?.copyWith(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            '${category.items.length} projects',
-                            style: theme.textTheme.labelSmall
-                                ?.copyWith(color: Colors.white70),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Icon(
-                      isExpanded
-                          ? Icons.keyboard_arrow_up_rounded
-                          : Icons.keyboard_arrow_down_rounded,
-                      color: Colors.white70,
+                      child: _buildHeaderRow(theme),
                     ),
                   ],
+                )
+              : Container(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 16, vertical: 14),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        category.color,
+                        category.color.withValues(alpha: 0.8),
+                      ],
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
+                  ),
+                  child: _buildHeaderRow(theme),
                 ),
-              ),
-            ),
-            AnimatedCrossFade(
-              firstChild: _buildItems(context, theme),
-              secondChild: const SizedBox(width: double.infinity),
-              crossFadeState: isExpanded
-                  ? CrossFadeState.showFirst
-                  : CrossFadeState.showSecond,
-              duration: const Duration(milliseconds: 200),
-            ),
-          ],
         ),
       ),
     )
@@ -268,56 +224,44 @@ class _SubCategoryCard extends StatelessWidget {
         .slideY(begin: 0.1);
   }
 
-  Widget _buildItems(BuildContext context, ThemeData theme) {
-    return Column(
-      children: category.items.asMap().entries.map((entry) {
-        final i = entry.key;
-        final item = entry.value;
-        final isLast = i == category.items.length - 1;
-        return InkWell(
-          onTap: () {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(item),
-                duration: const Duration(seconds: 1),
-                behavior: SnackBarBehavior.floating,
-              ),
-            );
-          },
-          child: Container(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-            decoration: BoxDecoration(
-              border: isLast
-                  ? null
-                  : Border(
-                      bottom: BorderSide(
-                        color: theme.dividerColor.withValues(alpha: 0.5),
-                      ),
-                    ),
-            ),
-            child: Row(
-              children: [
-                Container(
-                  width: 8,
-                  height: 8,
-                  decoration: BoxDecoration(
-                    color: category.color.withValues(alpha: 0.7),
-                    shape: BoxShape.circle,
-                  ),
-                ),
-                const SizedBox(width: 14),
-                Expanded(child: Text(item, style: theme.textTheme.bodyMedium)),
-                Icon(
-                  Icons.arrow_forward_ios_rounded,
-                  size: 14,
-                  color: theme.colorScheme.onSurface.withValues(alpha: 0.3),
-                ),
-              ],
-            ),
+  Widget _buildHeaderRow(ThemeData theme) {
+    return Row(
+      children: [
+        Container(
+          width: 40,
+          height: 40,
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: 0.2),
+            borderRadius: BorderRadius.circular(10),
           ),
-        );
-      }).toList(),
+          child: Icon(category.icon, color: Colors.white, size: 22),
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                category.title,
+                style: theme.textTheme.titleSmall?.copyWith(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                '${category.items.length} projects',
+                style: theme.textTheme.labelSmall
+                    ?.copyWith(color: Colors.white70),
+              ),
+            ],
+          ),
+        ),
+        const Icon(
+          Icons.arrow_forward_ios_rounded,
+          color: Colors.white70,
+        ),
+      ],
     );
   }
 }

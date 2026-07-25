@@ -107,6 +107,13 @@ class HiveService {
     await _settingsBox.put(HiveKeys.keyOnboarded, true);
   }
 
+  bool get isDarkMode =>
+      _settingsBox.get(HiveKeys.keyThemeMode, defaultValue: false) as bool;
+
+  Future<void> setDarkMode(bool isDark) async {
+    await _settingsBox.put(HiveKeys.keyThemeMode, isDark);
+  }
+
   // ── Cache ───────────────────────────
   String? getCached(String key) => _cacheBox.get(key);
 
