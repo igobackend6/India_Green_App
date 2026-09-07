@@ -14,7 +14,7 @@ class SmartActuatorsMotorsScreen extends ConsumerWidget {
         icon: Icons.settings_input_component_rounded,
         image: 'assets/images/products/products/Control & Automation/Smart Actuators & Motors/Precision Vent Motors.webp',
         description: 'AC-powered precision actuator for automated vent control.',
-        url: 'https://www.igoagritechfarms.in/products/automation/motors/vent-actuator-ac',
+        url: 'https://www.igoagritechfarms.com/products/automation/motors/vent-actuator-ac',
       ),
     ];
 

@@ -14,7 +14,7 @@ class SoftwareDashboardsScreen extends ConsumerWidget {
         icon: Icons.dashboard_rounded,
         image: 'assets/images/products/products/Digital Agri & IOT/Software & Dashboards/IGO Farm ERP.webp',
         description: 'Comprehensive farm ERP solution for corporate and enterprise operations management.',
-        url: 'https://www.igoagritechfarms.in/products/digital/software/igo-erp-farm-pro',
+        url: 'https://www.igoagritechfarms.com/products/digital/software/igo-erp-farm-pro',
       ),
     ];
 

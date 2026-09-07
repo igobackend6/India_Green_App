@@ -194,7 +194,7 @@ class AboutAppScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _InfoRow(icon: Icons.language_rounded,     label: 'Website',  value: 'www.igoagritechfarms.in'),
+                  _InfoRow(icon: Icons.language_rounded,     label: 'Website',  value: 'www.igoagritechfarms.com'),
                   _InfoRow(icon: Icons.email_rounded,        label: 'Email',    value: 'info@igoagritechfarms.in'),
                   _InfoRow(icon: Icons.business_rounded,     label: 'Group',    value: 'India Green Organics (IGO Group)'),
                   _InfoRow(icon: Icons.place_rounded,        label: 'Based in', value: 'Tamil Nadu, India 🇮🇳'),

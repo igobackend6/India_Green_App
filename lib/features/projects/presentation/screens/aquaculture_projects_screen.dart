@@ -31,9 +31,9 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF0277BD),
     image: 'assets/images/projects/Fish Farming Projects.png',
     items: [
-      (name: 'Traditional Fish Farming',  url: 'https://www.igoagritechfarms.in/projects/aquaculture/fish/traditional', image: 'assets/images/projects/Aquaculture Farming Projects/Fish Farming Projects/Traditional Fish Farming.webp'),
-      (name: 'Intensive Fish Farming',    url: 'https://www.igoagritechfarms.in/projects/aquaculture/fish/intensive', image: 'assets/images/projects/Aquaculture Farming Projects/Fish Farming Projects/intensive fish farming.webp'),
-      (name: 'Cage Fish Farming',         url: 'https://www.igoagritechfarms.in/projects/aquaculture/fish/cage', image: 'assets/images/projects/Aquaculture Farming Projects/Fish Farming Projects/Cage Fish Farming.webp'),
+      (name: 'Traditional Fish Farming',  url: 'https://www.igoagritechfarms.com/projects/aquaculture/fish/traditional', image: 'assets/images/projects/Aquaculture Farming Projects/Fish Farming Projects/Traditional Fish Farming.webp'),
+      (name: 'Intensive Fish Farming',    url: 'https://www.igoagritechfarms.com/projects/aquaculture/fish/intensive', image: 'assets/images/projects/Aquaculture Farming Projects/Fish Farming Projects/intensive fish farming.webp'),
+      (name: 'Cage Fish Farming',         url: 'https://www.igoagritechfarms.com/projects/aquaculture/fish/cage', image: 'assets/images/projects/Aquaculture Farming Projects/Fish Farming Projects/Cage Fish Farming.webp'),
     ],
   ),
   _SubCategory(
@@ -42,8 +42,8 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF00838F),
     image: 'assets/images/projects/Biofloc Farming Projects.png',
     items: [
-      (name: 'Biofloc Fish Farming',    url: 'https://www.igoagritechfarms.in/projects/aquaculture/biofloc/fish', image: 'assets/images/projects/Aquaculture Farming Projects/Biofloc Farming Projects/Biofloc Fish Farming.webp'),
-      (name: 'Biofloc Shrimp Farming',  url: 'https://www.igoagritechfarms.in/projects/aquaculture/biofloc/shrimp', image: 'assets/images/projects/Aquaculture Farming Projects/Biofloc Farming Projects/Biofloc Shrimp Farming.webp'),
+      (name: 'Biofloc Fish Farming',    url: 'https://www.igoagritechfarms.com/projects/aquaculture/biofloc/fish', image: 'assets/images/projects/Aquaculture Farming Projects/Biofloc Farming Projects/Biofloc Fish Farming.webp'),
+      (name: 'Biofloc Shrimp Farming',  url: 'https://www.igoagritechfarms.com/projects/aquaculture/biofloc/shrimp', image: 'assets/images/projects/Aquaculture Farming Projects/Biofloc Farming Projects/Biofloc Shrimp Farming.webp'),
     ],
   ),
   _SubCategory(
@@ -52,8 +52,8 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF01579B),
     image: 'assets/images/projects/Shrimp Farming Projects.png',
     items: [
-      (name: 'Vannamei Shrimp Farming',    url: 'https://www.igoagritechfarms.in/projects/aquaculture/shrimp/vannamei', image: 'assets/images/projects/Aquaculture Farming Projects/Shrimp Farming Projects/Vannamei Shrimp Farming.webp'),
-      (name: 'Freshwater Prawn Farming',   url: 'https://www.igoagritechfarms.in/projects/aquaculture/shrimp/prawn', image: 'assets/images/projects/Aquaculture Farming Projects/Shrimp Farming Projects/Freshwater Prawn Farming.webp'),
+      (name: 'Vannamei Shrimp Farming',    url: 'https://www.igoagritechfarms.com/projects/aquaculture/shrimp/vannamei', image: 'assets/images/projects/Aquaculture Farming Projects/Shrimp Farming Projects/Vannamei Shrimp Farming.webp'),
+      (name: 'Freshwater Prawn Farming',   url: 'https://www.igoagritechfarms.com/projects/aquaculture/shrimp/prawn', image: 'assets/images/projects/Aquaculture Farming Projects/Shrimp Farming Projects/Freshwater Prawn Farming.webp'),
     ],
   ),
   _SubCategory(
@@ -62,7 +62,7 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF004D40),
     image: 'assets/images/projects/Crab Farming Projects.png',
     items: [
-      (name: 'Mud Crab Farming',  url: 'https://www.igoagritechfarms.in/projects/aquaculture/crab/mud-crab', image: 'assets/images/projects/Aquaculture Farming Projects/Crab Farming Projects/Mud Crab Farming.webp'),
+      (name: 'Mud Crab Farming',  url: 'https://www.igoagritechfarms.com/projects/aquaculture/crab/mud-crab', image: 'assets/images/projects/Aquaculture Farming Projects/Crab Farming Projects/Mud Crab Farming.webp'),
     ],
   ),
   _SubCategory(
@@ -71,8 +71,8 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF006064),
     image: 'assets/images/projects/Integrated Aquaculture.png',
     items: [
-      (name: 'Aquaponics Systems',              url: 'https://www.igoagritechfarms.in/projects/aquaculture/integrated/aquaponics', image: 'assets/images/projects/Aquaculture Farming Projects/Integrated Aquaculture/Aquaponics Systems.webp'),
-      (name: 'Integrated Fish + Crop Farming',  url: 'https://www.igoagritechfarms.in/projects/aquaculture/integrated/fish-crop', image: 'assets/images/projects/Aquaculture Farming Projects/Integrated Aquaculture/Integrated Fish + Crop Farming.webp'),
+      (name: 'Aquaponics Systems',              url: 'https://www.igoagritechfarms.com/projects/aquaculture/integrated/aquaponics', image: 'assets/images/projects/Aquaculture Farming Projects/Integrated Aquaculture/Aquaponics Systems.webp'),
+      (name: 'Integrated Fish + Crop Farming',  url: 'https://www.igoagritechfarms.com/projects/aquaculture/integrated/fish-crop', image: 'assets/images/projects/Aquaculture Farming Projects/Integrated Aquaculture/Integrated Fish + Crop Farming.webp'),
     ],
   ),
 ];

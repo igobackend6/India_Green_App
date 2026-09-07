@@ -14,7 +14,7 @@ class DigitalServicesScreen extends ConsumerWidget {
         icon: Icons.satellite_rounded,
         image: 'assets/images/products/products/Digital Agri & IOT/Digital Services/Satellite Crop Health Monitoring.webp',
         description: 'Analyze crop development and yield potential with state-of-the-art satellite analytics.',
-        url: 'https://www.igoagritechfarms.in/products/digital/services/satellite-yield-monitor',
+        url: 'https://www.igoagritechfarms.com/products/digital/services/satellite-yield-monitor',
       ),
     ];
 

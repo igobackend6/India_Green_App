@@ -53,8 +53,40 @@ class _InAppWebViewScreenState extends State<_InAppWebViewScreen> {
             });
           },
           onPageFinished: (String url) {},
+          onNavigationRequest: (NavigationRequest request) async {
+            // Links to WhatsApp, phone dialer, email, or any other external
+            // app (custom URL schemes) can't be rendered by the in-app
+            // WebView itself — hand them off to the OS instead of letting
+            // the WebView try (and fail) to load them as a page.
+            final url = request.url;
+            final isExternalApp = url.startsWith('whatsapp://') ||
+                url.startsWith('tel:') ||
+                url.startsWith('mailto:') ||
+                url.startsWith('intent://') ||
+                url.contains('wa.me/') ||
+                url.contains('api.whatsapp.com');
+
+            if (isExternalApp) {
+              final uri = Uri.tryParse(url);
+              if (uri != null && await canLaunchUrl(uri)) {
+                await launchUrl(uri, mode: LaunchMode.externalApplication);
+              }
+              return NavigationDecision.prevent;
+            }
+
+            return NavigationDecision.navigate;
+          },
           onWebResourceError: (WebResourceError error) {
-            if (error.isForMainFrame ?? true) {
+            // A sub-resource (image, script, etc.) failing shouldn't blank
+            // out the whole page — only bail out on a genuine main-frame
+            // navigation failure, and only for schemes the WebView is
+            // actually expected to render.
+            final failingUrl = error.url;
+            final isRenderableScheme = failingUrl == null ||
+                failingUrl.startsWith('http://') ||
+                failingUrl.startsWith('https://');
+
+            if ((error.isForMainFrame ?? true) && isRenderableScheme) {
               setState(() {
                 _hasError = true;
               });

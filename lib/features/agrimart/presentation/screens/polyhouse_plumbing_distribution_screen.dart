@@ -15,7 +15,7 @@ class PolyhousePlumbingDistributionScreen extends ConsumerWidget {
         icon: Icons.water_rounded,
         image: 'assets/images/products/products/Polyhouse Structure/Plumbing & Distribution/Industrial Manual Disc Filter.webp',
         description: 'Heavy-duty disc filter for irrigation and plumbing systems.',
-        url: 'https://www.igoagritechfarms.in/products/structure/plumbing/disc-filter-industrial',
+        url: 'https://www.igoagritechfarms.com/products/structure/plumbing/disc-filter-industrial',
       ),
     ];
 

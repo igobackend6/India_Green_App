@@ -1,0 +1,157 @@
+{
+  "@@locale": "bn",
+  "appTitle": "ইন্ডিয়া গ্রিন অ্যাপ",
+  "tagline": "একটি অ্যাপ। প্রতিটি কৃষক। প্রতিটি অংশীদার।",
+  "navHome": "হোম",
+  "navMarket": "পণ্য",
+  "navMandi": "মান্ডি",
+  "navServices": "পরিষেবা",
+  "navAiDoc": "AI ডাক্তার",
+  "navHubs": "হাব",
+  "welcomeUser": "স্বাগতম, {name}!",
+  "@welcomeUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "salemFarmerHub": "সালেম কৃষক হাব",
+  "selectLanguage": "আপনার ভাষা নির্বাচন করুন",
+  "selectLanguageSubtitle": "চালিয়ে যেতে আপনার পছন্দের ভাষা বেছে নিন",
+  "selectRoles": "আপনার ভূমিকা বেছে নিন",
+  "selectRolesSubtitle": "আপনাকে বর্ণনা করে এমন এক বা একাধিক ভূমিকা নির্বাচন করুন",
+  "continueBtn": "চালিয়ে যান",
+  "loginWithOtp": "OTP দিয়ে লগইন করুন",
+  "enterPhone": "মোবাইল নম্বর লিখুন",
+  "enterOtp": "৬-সংখ্যার OTP লিখুন",
+  "verifyOtp": "OTP যাচাই করুন",
+  "sendOtp": "OTP পাঠান",
+  "resendOtp": "পুনরায় OTP পাঠান",
+  "enterName": "আপনার নাম লিখুন",
+  "enterPincode": "পিনকোড লিখুন",
+  "phoneHint": "9876543210",
+  "otpSentTo": "+91 {phone} নম্বরে OTP পাঠানো হয়েছে",
+  "@otpSentTo": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "pricePerQuintal": "₹{price}/Qtl",
+  "@pricePerQuintal": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "addToBasket": "ঝুড়িতে যোগ করুন",
+  "placeOrder": "অর্ডার করুন",
+  "basketItems": "{count, plural, =0{খালি ঝুড়ি} =1{১টি আইটেম} other{{count}টি আইটেম}}",
+  "@basketItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cropDoctor": "ফসল ডাক্তার",
+  "askCropDoctor": "আপনার ফসলের সমস্যা বর্ণনা করুন...",
+  "diagnosing": "পাতার ছবি বিশ্লেষণ করা হচ্ছে...",
+  "farmWallet": "ফার্ম ওয়ালেট",
+  "addMoney": "টাকা যোগ করুন",
+  "applyLoan": "ঋণের জন্য আবেদন করুন",
+  "govtSchemes": "সরকারি প্রকল্প",
+  "academy": "IGO ক্লাস একাডেমি",
+  "startLesson": "পাঠ শুরু করুন",
+  "lessonComplete": "পাঠ সম্পন্ন হয়েছে!",
+  "jobPortal": "কৃষি চাকরি পোর্টাল",
+  "applyNow": "এখনই আবেদন করুন",
+  "franchiseOpps": "ফ্র্যাঞ্চাইজি সুযোগ",
+  "jointVentures": "যৌথ উদ্যোগ",
+  "landListings": "কৃষি জমির তালিকা",
+  "vendorDashboard": "বিক্রেতা ড্যাশবোর্ড",
+  "myProfile": "আমার প্রোফাইল",
+  "settings": "সেটিংস",
+  "logout": "লগআউট",
+  "markAllRead": "সব পঠিত হিসেবে চিহ্নিত করুন",
+  "clearAll": "সব মুছে ফেলুন",
+  "notifications": "বিজ্ঞপ্তি",
+  "noNotifications": "এখনও কোনো বিজ্ঞপ্তি নেই",
+  "hubProfile": "আমার প্রোফাইল",
+  "hubVendor": "বিক্রেতা ড্যাশবোর্ড",
+  "hubFinance": "ফার্ম ওয়ালেট ও ঋণ",
+  "hubLearn": "ক্লাস একাডেমি",
+  "hubOpps": "এস্টেট ও ফ্র্যাঞ্চাইজি",
+  "hubJobs": "কৃষি চাকরি পোর্টাল",
+  "comingSoon": "শীঘ্রই আসছে",
+  "featureUnderDevelopment": "এই বৈশিষ্ট্যটি উন্নয়নাধীন",
+  "quickActions": "দ্রুত কার্যক্রম",
+  "igoBrands": "IGO গ্রুপস",
+  "viewAll": "সব দেখুন",
+  "searchProducts": "পণ্য খুঁজুন...",
+  "categories": "বিভাগসমূহ",
+  "roleFarmer": "কৃষক",
+  "roleFarmerDesc": "উপকরণ কিনুন, ফসল বিক্রি করুন, ফসলের পরামর্শ নিন",
+  "roleVendor": "বিক্রেতা",
+  "roleVendorDesc": "পণ্য তালিকাভুক্ত করুন, অর্ডার পরিচালনা করুন, পেআউট দেখুন",
+  "roleConsumer": "ভোক্তা",
+  "roleConsumerDesc": "খামার থেকে তাজা জৈব পণ্য কিনুন",
+  "roleInvestor": "বিনিয়োগকারী",
+  "roleInvestorDesc": "কৃষি জমি, বন্ড বা ফ্র্যাঞ্চাইজিতে বিনিয়োগ করুন",
+  "roleJobSeeker": "চাকরি প্রার্থী",
+  "roleJobSeekerDesc": "সারা ভারতে কৃষি চাকরি খুঁজুন",
+  "roleFranchise": "ফ্র্যাঞ্চাইজি অংশীদার",
+  "roleFranchiseDesc": "সরকারী FICO শাখা চালু করুন ও বৃদ্ধি করুন",
+  "selectAtLeastOneRole": "অন্তত একটি ভূমিকা নির্বাচন করুন",
+  "continueWithRoles": "{count}টি ভূমিকা নিয়ে চালিয়ে যান",
+  "@continueWithRoles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "buyInputs": "উপকরণ কিনুন",
+  "sellProduce": "ফসল বিক্রি করুন",
+  "mandiPrices": "মান্ডি দাম",
+  "loanApply": "ঋণ আবেদন",
+  "agriJobs": "কৃষি চাকরি",
+  "igoAcademy": "IGO একাডেমি",
+  "franchise": "ফ্র্যাঞ্চাইজি",
+  "language": "ভাষা",
+  "darkMode": "ডার্ক মোড",
+  "notificationPrefs": "বিজ্ঞপ্তি পছন্দ",
+  "aboutApp": "INDIA GREEN APP সম্পর্কে",
+  "seedsCategory": "কৃষি\nউপকরণ",
+  "polyhouseCategory": "পলিহাউস\nকাঠামো",
+  "horticultureCatalogCategory": "উদ্যানপালন\nক্যাটালগ",
+  "controlAutomationCategory": "নিয়ন্ত্রণ ও\nঅটোমেশন",
+  "digitalAgriCategory": "ডিজিটাল কৃষি\n ও IoT",
+  "postHarvestLegacyCategory": "ফসল কাটার পরে\n ও ঐতিহ্য",
+  "featuredProducts": "বৈশিষ্ট্যযুক্ত পণ্য",
+  "addToCart": "কার্টে যোগ করুন",
+  "liveMandiPrices": "লাইভ মান্ডি দাম",
+  "salemApmcMarket": "সালেম APMC বাজার",
+  "change": "পরিবর্তন",
+  "arrival": "আগমন",
+  "scanCropDisease": "ফসলের রোগ স্ক্যান করুন",
+  "scanCropDiseaseDesc": "তাৎক্ষণিক AI নির্ণয় এবং চিকিৎসার পরামর্শ পেতে আপনার আক্রান্ত ফসলের পাতার ছবি তুলুন।",
+  "openCamera": "ক্যামেরা খুলুন",
+  "analyzePhoto": "ছবি বিশ্লেষণ করুন",
+  "analyzing": "আপনার ফসল বিশ্লেষণ করা হচ্ছছে...",
+  "navProjects": "প্রকল্প",
+  "navCourse": "কোর্স",
+  "projectsTitle": "প্রকল্প",
+  "agriFarmingProjects": "কৃষি প্রকল্প",
+  "aquacultureProjects": "জলজ চাষ প্রকল্প",
+  "livestockFarmingProjects": "পশুপালন প্রকল্প",
+  "farmEngineeringProjects": "কৃষি প্রকৌশল প্রকল্প",
+  "userDetailsTitle": "আপনার সম্পর্কে বলুন",
+  "userDetailsSubtitle": "আপনার অভিজ্ঞতা ব্যক্তিগতকরণের জন্য কিছু বিবরণ",
+  "enterAddress": "আপনার গ্রাম / শহর লিখুন",
+  "addressHint": "গ্রাম, তালুক, জেলা",
+  "completeProfile": "প্রোফাইল সম্পূর্ণকরুন এবং অ্যাপে প্রবেশ করুন"
+}

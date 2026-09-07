@@ -15,7 +15,7 @@ class PolyhouseStructuralFramesScreen extends ConsumerWidget {
         icon: Icons.construction_rounded,
         image: 'assets/images/products/products/Polyhouse Structure/Structural Frames & Parts/Gi Structural Pipes.webp',
         description: 'Galvanized iron pipes for sturdy polyhouse frames.',
-        url: 'https://www.igoagritechfarms.in/products/structure/frames/gi-pipe-structure',
+        url: 'https://www.igoagritechfarms.com/products/structure/frames/gi-pipe-structure',
       ),
     ];
 

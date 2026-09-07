@@ -14,7 +14,7 @@ class DosingFertigationScreen extends ConsumerWidget {
         icon: Icons.science_rounded,
         image: 'assets/images/products/products/Control & Automation/Dosing & Fertigation/IGO FertiMix Classic (3-Channel).jpeg',
         description: 'Precision 3-channel dosing unit for automated fertigation.',
-        url: 'https://www.igoagritechfarms.in/products/automation/dosing/fertigation-machine-classic',
+        url: 'https://www.igoagritechfarms.com/products/automation/dosing/fertigation-machine-classic',
       ),
     ];
 

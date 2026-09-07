@@ -31,10 +31,10 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF37474F),
     image: 'assets/images/projects/Farm Infrastructure Projects.jpg',
     items: [
-      (name: 'Cold Storage',   url: 'https://www.igoagritechfarms.in/projects/engineering/infrastructure/cold-storage', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Cold Storage.webp'),
-      (name: 'Pack House',     url: 'https://www.igoagritechfarms.in/projects/engineering/infrastructure/pack-house', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Pack House.webp'),
-      (name: 'Farm Buildings', url: 'https://www.igoagritechfarms.in/projects/engineering/infrastructure/buildings', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Farm Buildings.webp'),
-      (name: 'Farm Roads',     url: 'https://www.igoagritechfarms.in/projects/engineering/infrastructure/roads', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Farm Roads.webp'),
+      (name: 'Cold Storage',   url: 'https://www.igoagritechfarms.com/projects/engineering/infrastructure/cold-storage', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Cold Storage.webp'),
+      (name: 'Pack House',     url: 'https://www.igoagritechfarms.com/projects/engineering/infrastructure/pack-house', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Pack House.webp'),
+      (name: 'Farm Buildings', url: 'https://www.igoagritechfarms.com/projects/engineering/infrastructure/buildings', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Farm Buildings.webp'),
+      (name: 'Farm Roads',     url: 'https://www.igoagritechfarms.com/projects/engineering/infrastructure/roads', image: 'assets/images/projects/Farm Engineering Projects/Farm Infrastructure Projects/Farm Roads.webp'),
     ],
   ),
   _SubCategory(
@@ -43,10 +43,10 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF0277BD),
     image: 'assets/images/projects/Water Management Projects.jpg',
     items: [
-      (name: 'Rainwater Harvesting',          url: 'https://www.igoagritechfarms.in/projects/engineering/water/rainwater', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Rainwater Harvesting.webp'),
-      (name: 'Pond Liner Installation',        url: 'https://www.igoagritechfarms.in/projects/engineering/water/pond-liner', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Pond Liner Installation.webp'),
-      (name: 'Farm Irrigation Systems',        url: 'https://www.igoagritechfarms.in/projects/engineering/water/irrigation', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Farm Irrigation Systems.webp'),
-      (name: 'Borewell & Water Storage Systems', url: 'https://www.igoagritechfarms.in/projects/engineering/water/borewell', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Borewell & Water Storage Systems.webp'),
+      (name: 'Rainwater Harvesting',          url: 'https://www.igoagritechfarms.com/projects/engineering/water/rainwater', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Rainwater Harvesting.webp'),
+      (name: 'Pond Liner Installation',        url: 'https://www.igoagritechfarms.com/projects/engineering/water/pond-liner', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Pond Liner Installation.webp'),
+      (name: 'Farm Irrigation Systems',        url: 'https://www.igoagritechfarms.com/projects/engineering/water/irrigation', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Farm Irrigation Systems.webp'),
+      (name: 'Borewell & Water Storage Systems', url: 'https://www.igoagritechfarms.com/projects/engineering/water/borewell', image: 'assets/images/projects/Farm Engineering Projects/Water Management Projects/Borewell & Water Storage Systems.webp'),
     ],
   ),
   _SubCategory(
@@ -55,10 +55,10 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFFF57F17),
     image: 'assets/images/projects/Solar Agriculture Projects.jpeg',
     items: [
-      (name: 'Solar Crop Dryer', url: 'https://www.igoagritechfarms.in/projects/engineering/solar/crop-dryer', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Crop Dryer.webp'),
-      (name: 'Solar Heater',     url: 'https://www.igoagritechfarms.in/projects/engineering/solar/heater', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Heater.webp'),
-      (name: 'Solar Fencing',    url: 'https://www.igoagritechfarms.in/projects/engineering/solar/fencing', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Fencing.webp'),
-      (name: 'Solar Lighting',   url: 'https://www.igoagritechfarms.in/projects/engineering/solar/lighting', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Lighting.webp'),
+      (name: 'Solar Crop Dryer', url: 'https://www.igoagritechfarms.com/projects/engineering/solar/crop-dryer', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Crop Dryer.webp'),
+      (name: 'Solar Heater',     url: 'https://www.igoagritechfarms.com/projects/engineering/solar/heater', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Heater.webp'),
+      (name: 'Solar Fencing',    url: 'https://www.igoagritechfarms.com/projects/engineering/solar/fencing', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Fencing.webp'),
+      (name: 'Solar Lighting',   url: 'https://www.igoagritechfarms.com/projects/engineering/solar/lighting', image: 'assets/images/projects/Farm Engineering Projects/Solar Agriculture Projects/Solar Lighting.webp'),
     ],
   ),
   _SubCategory(
@@ -67,10 +67,10 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF4E342E),
     image: 'assets/images/projects/Farm Development Projects.jpeg',
     items: [
-      (name: 'Land Surveying',       url: 'https://www.igoagritechfarms.in/projects/engineering/development/surveying', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Land Surveying.webp'),
-      (name: 'Topographic Mapping',  url: 'https://www.igoagritechfarms.in/projects/engineering/development/topographic', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Topographic Mapping.webp'),
-      (name: 'Contour Mapping',      url: 'https://www.igoagritechfarms.in/projects/engineering/development/contour', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Contour Mapping.webp'),
-      (name: 'Land Leveling',        url: 'https://www.igoagritechfarms.in/projects/engineering/development/leveling', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Land Leveling.webp'),
+      (name: 'Land Surveying',       url: 'https://www.igoagritechfarms.com/projects/engineering/development/surveying', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Land Surveying.webp'),
+      (name: 'Topographic Mapping',  url: 'https://www.igoagritechfarms.com/projects/engineering/development/topographic', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Topographic Mapping.webp'),
+      (name: 'Contour Mapping',      url: 'https://www.igoagritechfarms.com/projects/engineering/development/contour', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Contour Mapping.webp'),
+      (name: 'Land Leveling',        url: 'https://www.igoagritechfarms.com/projects/engineering/development/leveling', image: 'assets/images/projects/Farm Engineering Projects/Farm Development Projects/Land Leveling.webp'),
     ],
   ),
 ];

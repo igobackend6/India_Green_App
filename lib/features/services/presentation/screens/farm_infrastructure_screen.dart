@@ -17,7 +17,7 @@ class FarmInfrastructureScreen extends ConsumerWidget {
         description:
             'Design and construction of temperature-controlled storage facilities.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-infrastructure/cold-storage-construction',
+            'https://www.igoagritechfarms.com/services/farm-infrastructure/cold-storage-construction',
       ),
       (
         title: 'Packhouse Construction',
@@ -26,7 +26,7 @@ class FarmInfrastructureScreen extends ConsumerWidget {
         description:
             'Modern packing, grading, and sorting facilities for farm produce.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-infrastructure/packhouse-construction',
+            'https://www.igoagritechfarms.com/services/farm-infrastructure/packhouse-construction',
       ),
       (
         title: 'Farm Building Design',
@@ -35,7 +35,7 @@ class FarmInfrastructureScreen extends ConsumerWidget {
         description:
             'Planning and building of farmhouses, staff quarters, and equipment sheds.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-infrastructure/farm-building-design',
+            'https://www.igoagritechfarms.com/services/farm-infrastructure/farm-building-design',
       ),
       (
         title: 'Drip Irrigation Installation',
@@ -44,7 +44,7 @@ class FarmInfrastructureScreen extends ConsumerWidget {
         description:
             'Water-efficient drip systems tailored for your specific crops and layout.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-infrastructure/drip-irrigation-installation',
+            'https://www.igoagritechfarms.com/services/farm-infrastructure/drip-irrigation-installation',
       ),
       (
         title: 'Sprinkler Irrigation Systems',
@@ -53,7 +53,7 @@ class FarmInfrastructureScreen extends ConsumerWidget {
         description:
             'Overhead and micro-sprinkler systems for uniform water distribution.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-infrastructure/sprinkler-irrigation-systems',
+            'https://www.igoagritechfarms.com/services/farm-infrastructure/sprinkler-irrigation-systems',
       ),
       (
         title: 'Water Pump Systems',
@@ -62,7 +62,7 @@ class FarmInfrastructureScreen extends ConsumerWidget {
         description:
             'Installation of solar and electric pumps with integrated automation.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-infrastructure/water-pump-systems',
+            'https://www.igoagritechfarms.com/services/farm-infrastructure/water-pump-systems',
       ),
       (
         title: 'Land Leveling',
@@ -71,7 +71,7 @@ class FarmInfrastructureScreen extends ConsumerWidget {
         description:
             'Laser land leveling to ensure optimal water use and field uniformity.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-infrastructure/land-leveling',
+            'https://www.igoagritechfarms.com/services/farm-infrastructure/land-leveling',
       ),
     ];
 

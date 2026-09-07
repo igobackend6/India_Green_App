@@ -15,7 +15,7 @@ class PolyhouseGreenhouseCoveringScreen extends ConsumerWidget {
         icon: Icons.roofing_rounded,
         image: 'assets/images/products/products/Polyhouse Structure/Greenhouse Covering/UV Stabilized Polythylene Filim.webp',
         description: 'Durable covering for optimal light transmission and protection.',
-        url: 'https://www.igoagritechfarms.in/products/structure/covering/polyhouse-polyethylene',
+        url: 'https://www.igoagritechfarms.com/products/structure/covering/polyhouse-polyethylene',
       ),
     ];
 

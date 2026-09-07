@@ -14,7 +14,7 @@ class LivestockEcosystemsScreen extends ConsumerWidget {
         icon: Icons.pets_rounded,
         image: 'assets/images/products/products/post-harvest & legacy/Livestock Ecosystems/IGO Premium Cattle Feed.webp',
         description: 'Nutritionally balanced premium cattle feed to enhance milk yield and overall herd health.',
-        url: 'https://www.igoagritechfarms.in/products/specialized/livestock/cattle-feed-premium',
+        url: 'https://www.igoagritechfarms.com/products/specialized/livestock/cattle-feed-premium',
       ),
     ];
 

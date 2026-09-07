@@ -14,7 +14,7 @@ class VegetableCropsScreen extends ConsumerWidget {
         icon: Icons.eco_rounded,
         image: 'assets/images/products/products/Horticulture Catalog/Vegetable Crops/Hybrid Capsicum Seeds.webp',
         description: 'Premium hybrid capsicum seeds for high yield and excellent quality.',
-        url: 'https://www.igoagritechfarms.in/products/horticulture/vegetables/capsicum-seeds-hybrid',
+        url: 'https://www.igoagritechfarms.com/products/horticulture/vegetables/capsicum-seeds-hybrid',
       ),
     ];
 

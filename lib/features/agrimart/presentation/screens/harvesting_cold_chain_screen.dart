@@ -14,14 +14,14 @@ class HarvestingColdChainScreen extends ConsumerWidget {
         icon: Icons.wb_sunny_rounded,
         image: 'assets/images/products/products/post-harvest & legacy/Harvesting & Cold Chain/IGO Solar Tunnel Dryer.webp',
         description: 'Eco-friendly and efficient solar tunnel dryer for dehydrating crops and maintaining quality.',
-        url: 'https://www.igoagritechfarms.in/products/specialized/post-harvest/solar-tunnel-dryer-igo',
+        url: 'https://www.igoagritechfarms.com/products/specialized/post-harvest/solar-tunnel-dryer-igo',
       ),
       (
         title: 'Food-Grade Harvesting Crates',
         icon: Icons.inventory_2_rounded,
         image: 'assets/images/products/products/post-harvest & legacy/Harvesting & Cold Chain/Food-Grade Harvesting Crates.webp',
         description: 'Durable, stackable, food-grade plastic crates designed for crop harvesting and transportation.',
-        url: 'https://www.igoagritechfarms.in/products/specialized/post-harvest/plastic-harvesting-crates',
+        url: 'https://www.igoagritechfarms.com/products/specialized/post-harvest/plastic-harvesting-crates',
       ),
     ];
 

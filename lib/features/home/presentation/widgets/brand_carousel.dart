@@ -84,7 +84,7 @@ final _brands = <_Brand>[
     tag: '',
     desc: 'Advanced modern agriculture farms.',
     emoji: '🚜',
-    url: 'https://www.igoagritechfarms.in/',
+    url: 'https://www.igoagritechfarms.com/',
     accent: Color(0xFF388E3C),
   ),
   (

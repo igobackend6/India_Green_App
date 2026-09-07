@@ -15,7 +15,7 @@ class PolyhouseMistingFoggingScreen extends ConsumerWidget {
         icon: Icons.water_drop_rounded,
         image: 'assets/images/products/products/Polyhouse Structure/Misting & Fogging/Mist-Cool High Pressure Kit.webp',
         description: 'Complete high-pressure misting kit for climate control.',
-        url: 'https://www.igoagritechfarms.in/products/structure/misting/misting-nozzle-kit',
+        url: 'https://www.igoagritechfarms.com/products/structure/misting/misting-nozzle-kit',
       ),
     ];
 

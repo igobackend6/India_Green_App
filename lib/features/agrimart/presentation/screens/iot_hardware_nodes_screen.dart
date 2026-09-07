@@ -14,7 +14,7 @@ class IotHardwareNodesScreen extends ConsumerWidget {
         icon: Icons.sensors_rounded,
         image: 'assets/images/products/products/Digital Agri & IOT/IOT Hardware & Nodes/SmartFarm Soil Health Node.webp',
         description: 'Advanced telemetry IoT node for monitoring real-time soil health, moisture, and NPK levels.',
-        url: 'https://www.igoagritechfarms.in/products/digital/hardware/iot-soil-node-v2',
+        url: 'https://www.igoagritechfarms.com/products/digital/hardware/iot-soil-node-v2',
       ),
     ];
 

@@ -17,7 +17,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Complete setup of climate-controlled polyhouses for high-yield farming.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/polyhouse-installation',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/polyhouse-installation',
       ),
       (
         title: 'Hydroponic Setup',
@@ -26,7 +26,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Advanced soil-less farming systems for urban and commercial spaces.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/hydroponic-setup',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/hydroponic-setup',
       ),
       (
         title: 'Vertical Farming Setup',
@@ -35,7 +35,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Space-efficient multi-level farming structures for maximum yield.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/vertical-farming-setup',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/vertical-farming-setup',
       ),
       (
         title: 'Fish Farming Setup',
@@ -44,7 +44,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Commercial fish farming ponds and tank installations.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/fish-farming-setup',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/fish-farming-setup',
       ),
       (
         title: 'Biofloc Installation',
@@ -53,7 +53,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'High-density indoor fish farming systems with zero water exchange.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/biofloc-installation',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/biofloc-installation',
       ),
       (
         title: 'Aquaculture Pond Construction',
@@ -62,7 +62,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Excavation and lining of large-scale aquaculture ponds.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/aquaculture-pond-construction',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/aquaculture-pond-construction',
       ),
       (
         title: 'Aquaponics Setup',
@@ -71,7 +71,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Integrated systems combining fish farming with hydroponic plants.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/aquaponics-setup',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/aquaponics-setup',
       ),
       (
         title: 'Goat Farm Setup',
@@ -80,7 +80,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Sheds, feeding systems, and fencing for commercial goat farming.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/goat-farm-setup',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/goat-farm-setup',
       ),
       (
         title: 'Dairy Farm Setup',
@@ -89,7 +89,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Modern dairy cattle housing and automated milking setups.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/dairy-farm-setup',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/dairy-farm-setup',
       ),
       (
         title: 'Sheep Farm Setup',
@@ -98,7 +98,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Optimized grazing layouts and enclosures for sheep farming.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/sheep-farm-setup',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/sheep-farm-setup',
       ),
       (
         title: 'Poultry Farm Setup',
@@ -107,7 +107,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Climate-controlled poultry sheds for layers and broilers.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/poultry-farm-setup',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/poultry-farm-setup',
       ),
       (
         title: 'GIS Mapping',
@@ -116,7 +116,7 @@ class FarmingProjectSetupScreen extends ConsumerWidget {
         description:
             'Satellite and drone-based spatial mapping for large farms.',
         url:
-            'https://www.igoagritechfarms.in/services/farming-project-setup/gis-mapping',
+            'https://www.igoagritechfarms.com/services/farming-project-setup/gis-mapping',
       ),
     ];
 

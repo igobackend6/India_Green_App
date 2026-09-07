@@ -17,7 +17,7 @@ class FarmPlanningConsultingScreen extends ConsumerWidget {
         description:
             'Comprehensive financial and operational planning for your agribusiness.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-planning/farm-business-planning',
+            'https://www.igoagritechfarms.com/services/farm-planning/farm-business-planning',
       ),
       (
         title: 'Agri Investment Consulting',
@@ -26,7 +26,7 @@ class FarmPlanningConsultingScreen extends ConsumerWidget {
         description:
             'Strategic advice on farmland investments and portfolio management.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-planning/agri-investment-consulting',
+            'https://www.igoagritechfarms.com/services/farm-planning/agri-investment-consulting',
       ),
       (
         title: 'Crop Selection',
@@ -35,7 +35,7 @@ class FarmPlanningConsultingScreen extends ConsumerWidget {
         description:
             'Data-driven crop recommendations based on soil, climate, and market trends.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-planning/crop-selection-consulting',
+            'https://www.igoagritechfarms.com/services/farm-planning/crop-selection-consulting',
       ),
       (
         title: 'Farm Layout Design',
@@ -44,7 +44,7 @@ class FarmPlanningConsultingScreen extends ConsumerWidget {
         description:
             'Optimized spatial planning for fields, irrigation, and farm structures.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-planning/farm-layout-design',
+            'https://www.igoagritechfarms.com/services/farm-planning/farm-layout-design',
       ),
       (
         title: 'Aquaculture Consulting',
@@ -53,7 +53,7 @@ class FarmPlanningConsultingScreen extends ConsumerWidget {
         description:
             'Expert guidance on setting up and managing profitable fish farms.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-planning/aquaculture-consulting',
+            'https://www.igoagritechfarms.com/services/farm-planning/aquaculture-consulting',
       ),
       (
         title: 'Land Surveying',
@@ -62,7 +62,7 @@ class FarmPlanningConsultingScreen extends ConsumerWidget {
         description:
             'Accurate topographic and boundary surveys for farm development.',
         url:
-            'https://www.igoagritechfarms.in/services/farm-planning/land-surveying',
+            'https://www.igoagritechfarms.com/services/farm-planning/land-surveying',
       ),
     ];
 

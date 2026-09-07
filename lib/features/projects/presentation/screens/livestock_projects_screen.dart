@@ -31,8 +31,8 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF558B2F),
     image: 'assets/images/projects/Goat Farming.png',
     items: [
-      (name: 'Commercial Goat Farming',  url: 'https://www.igoagritechfarms.in/projects/livestock/goat/commercial', image: 'assets/images/projects/Livestock Farming Projects/Goat Farming/Commercial Goat Farming.webp'),
-      (name: 'Integrated Goat Farming',  url: 'https://www.igoagritechfarms.in/projects/livestock/goat/integrated', image: 'assets/images/projects/Livestock Farming Projects/Goat Farming/Integrated Goat Farming.webp'),
+      (name: 'Commercial Goat Farming',  url: 'https://www.igoagritechfarms.com/projects/livestock/goat/commercial', image: 'assets/images/projects/Livestock Farming Projects/Goat Farming/Commercial Goat Farming.webp'),
+      (name: 'Integrated Goat Farming',  url: 'https://www.igoagritechfarms.com/projects/livestock/goat/integrated', image: 'assets/images/projects/Livestock Farming Projects/Goat Farming/Integrated Goat Farming.webp'),
     ],
   ),
   _SubCategory(
@@ -41,7 +41,7 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF6D4C41),
     image: 'assets/images/projects/Sheep Farming.png',
     items: [
-      (name: 'Commercial Sheep Farming',  url: 'https://www.igoagritechfarms.in/projects/livestock/sheep/commercial', image: 'assets/images/projects/Livestock Farming Projects/Sheep Farming/Commercial Sheep Farming.webp'),
+      (name: 'Commercial Sheep Farming',  url: 'https://www.igoagritechfarms.com/projects/livestock/sheep/commercial', image: 'assets/images/projects/Livestock Farming Projects/Sheep Farming/Commercial Sheep Farming.webp'),
     ],
   ),
   _SubCategory(
@@ -50,8 +50,8 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF1565C0),
     image: 'assets/images/projects/Dairy Farming.png',
     items: [
-      (name: 'Dairy Farm Setup',        url: 'https://www.igoagritechfarms.in/projects/livestock/dairy/setup', image: 'assets/images/projects/Livestock Farming Projects/Dairy Farming/Dairy Farm Setup.webp'),
-      (name: 'Automated Dairy Systems', url: 'https://www.igoagritechfarms.in/projects/livestock/dairy/automated', image: 'assets/images/projects/Livestock Farming Projects/Dairy Farming/Automated Dairy Systems.webp'),
+      (name: 'Dairy Farm Setup',        url: 'https://www.igoagritechfarms.com/projects/livestock/dairy/setup', image: 'assets/images/projects/Livestock Farming Projects/Dairy Farming/Dairy Farm Setup.webp'),
+      (name: 'Automated Dairy Systems', url: 'https://www.igoagritechfarms.com/projects/livestock/dairy/automated', image: 'assets/images/projects/Livestock Farming Projects/Dairy Farming/Automated Dairy Systems.webp'),
     ],
   ),
   _SubCategory(
@@ -60,8 +60,8 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFFE65100),
     image: 'assets/images/projects/Poultry Farming.png',
     items: [
-      (name: 'Broiler Chicken Farms',  url: 'https://www.igoagritechfarms.in/projects/livestock/poultry/broiler', image: 'assets/images/projects/Livestock Farming Projects/Poultry Farming/Broiler Chicken Farms.webp'),
-      (name: 'Layer Chicken Farms',    url: 'https://www.igoagritechfarms.in/projects/livestock/poultry/layer', image: 'assets/images/projects/Livestock Farming Projects/Poultry Farming/Layer Chicken Farms.webp'),
+      (name: 'Broiler Chicken Farms',  url: 'https://www.igoagritechfarms.com/projects/livestock/poultry/broiler', image: 'assets/images/projects/Livestock Farming Projects/Poultry Farming/Broiler Chicken Farms.webp'),
+      (name: 'Layer Chicken Farms',    url: 'https://www.igoagritechfarms.com/projects/livestock/poultry/layer', image: 'assets/images/projects/Livestock Farming Projects/Poultry Farming/Layer Chicken Farms.webp'),
     ],
   ),
   _SubCategory(
@@ -70,8 +70,8 @@ const _kSubCategories = <_SubCategory>[
     color: Color(0xFF37474F),
     image: 'assets/images/projects/Integrated Livestock Farming.png',
     items: [
-      (name: 'Goat + Fish Farming',   url: 'https://www.igoagritechfarms.in/projects/livestock/integrated/goat-fish', image: 'assets/images/projects/Livestock Farming Projects/Integrated Livestock Farming/Goat + Fish Farming.webp'),
-      (name: 'Dairy + Crop Farming',  url: 'https://www.igoagritechfarms.in/projects/livestock/integrated/dairy-crop', image: 'assets/images/projects/Livestock Farming Projects/Integrated Livestock Farming/Dairy + Crop Farming.webp'),
+      (name: 'Goat + Fish Farming',   url: 'https://www.igoagritechfarms.com/projects/livestock/integrated/goat-fish', image: 'assets/images/projects/Livestock Farming Projects/Integrated Livestock Farming/Goat + Fish Farming.webp'),
+      (name: 'Dairy + Crop Farming',  url: 'https://www.igoagritechfarms.com/projects/livestock/integrated/dairy-crop', image: 'assets/images/projects/Livestock Farming Projects/Integrated Livestock Farming/Dairy + Crop Farming.webp'),
     ],
   ),
 ];

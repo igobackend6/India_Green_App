@@ -17,7 +17,7 @@ class MaintenanceSupportScreen extends ConsumerWidget {
         description:
             'Design and building of durable sheds for cattle, poultry, and other livestock.',
         url:
-            'https://www.igoagritechfarms.in/services/maintenance-support/livestock-shed-construction',
+            'https://www.igoagritechfarms.com/services/maintenance-support/livestock-shed-construction',
       ),
       (
         title: 'Polyhouse AMC',
@@ -26,7 +26,7 @@ class MaintenanceSupportScreen extends ConsumerWidget {
         description:
             'Annual maintenance contracts for polyhouse structure and climate control systems.',
         url:
-            'https://www.igoagritechfarms.in/services/maintenance-support/polyhouse-amc',
+            'https://www.igoagritechfarms.com/services/maintenance-support/polyhouse-amc',
       ),
       (
         title: 'Hydroponic System AMC',
@@ -35,7 +35,7 @@ class MaintenanceSupportScreen extends ConsumerWidget {
         description:
             'Regular servicing and nutrient management for hydroponic installations.',
         url:
-            'https://www.igoagritechfarms.in/services/maintenance-support/hydroponic-system-amc',
+            'https://www.igoagritechfarms.com/services/maintenance-support/hydroponic-system-amc',
       ),
       (
         title: 'Farm Equipment Maintenance',
@@ -44,7 +44,7 @@ class MaintenanceSupportScreen extends ConsumerWidget {
         description:
             'Repair and upkeep of tractors, tillers, and automated farming tools.',
         url:
-            'https://www.igoagritechfarms.in/services/maintenance-support/farm-equipment-maintenance',
+            'https://www.igoagritechfarms.com/services/maintenance-support/farm-equipment-maintenance',
       ),
     ];
 

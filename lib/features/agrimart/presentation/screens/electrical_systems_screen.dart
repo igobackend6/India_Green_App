@@ -14,7 +14,7 @@ class ElectricalSystemsScreen extends ConsumerWidget {
         icon: Icons.electrical_services_rounded,
         image: 'assets/images/products/products/Control & Automation/Electrical Systems/Pump VFD Control Panel.webp',
         description: 'Variable frequency drive panel for farm pump control.',
-        url: 'https://www.igoagritechfarms.in/products/automation/electrical/farm-vfd-panel',
+        url: 'https://www.igoagritechfarms.com/products/automation/electrical/farm-vfd-panel',
       ),
     ];
 

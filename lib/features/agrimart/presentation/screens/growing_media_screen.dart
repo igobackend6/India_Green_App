@@ -15,14 +15,14 @@ class GrowingMediaScreen extends ConsumerWidget {
         icon: Icons.layers_rounded,
         image: 'assets/images/products/products/Agri-farming/Growing Media & Substrates/Premium Buffered Cocopeat.webp',
         description: 'High-quality washed and buffered cocopeat for all crops.',
-        url: 'https://www.igoagritechfarms.in/products/agri-inputs/media/premium-cocopeat',
+        url: 'https://www.igoagritechfarms.com/products/agri-inputs/media/premium-cocopeat',
       ),
       (
         title: 'Agriculture Expanded Perlite',
         icon: Icons.layers_rounded,
         image: 'assets/images/products/products/Agri-farming/Growing Media & Substrates/Agriculture Expanded Perlite.webp',
         description: 'Premium expanded perlite for improving soil aeration and drainage.',
-        url: 'https://www.igoagritechfarms.in/products/agri-inputs/media/expanded-perlite',
+        url: 'https://www.igoagritechfarms.com/products/agri-inputs/media/expanded-perlite',
       ),
     ];
 

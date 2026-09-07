@@ -14,7 +14,7 @@ class EnvironmentalControllersScreen extends ConsumerWidget {
         icon: Icons.thermostat_rounded,
         image: 'assets/images/products/products/Control & Automation/Environmental Controllers/IGO-Link SmartHub Hub.jpeg',
         description: 'Centralized smart hub for environmental monitoring and control.',
-        url: 'https://www.igoagritechfarms.in/products/automation/controllers/igolink-smarthub',
+        url: 'https://www.igoagritechfarms.com/products/automation/controllers/igolink-smarthub',
       ),
     ];
 

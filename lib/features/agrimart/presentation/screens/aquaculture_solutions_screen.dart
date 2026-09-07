@@ -14,14 +14,14 @@ class AquacultureSolutionsScreen extends ConsumerWidget {
         icon: Icons.waves_rounded,
         image: 'assets/images/products/products/post-harvest & legacy/Aquaculture Solutions/Paddle Wheel Aerator.webp',
         description: 'High-efficiency 2HP paddle wheel aerator for improving pond dissolved oxygen levels.',
-        url: 'https://www.igoagritechfarms.in/products/specialized/aquaculture/paddle-wheel-aerator-pro',
+        url: 'https://www.igoagritechfarms.com/products/specialized/aquaculture/paddle-wheel-aerator-pro',
       ),
       (
         title: 'Premium Floating Fish Feed',
         icon: Icons.grain_rounded,
         image: 'assets/images/products/products/post-harvest & legacy/Aquaculture Solutions/Premium Floating Fish Feed.webp',
         description: 'Nutritious, high-protein floating feed formulated for maximum growth rates in fish.',
-        url: 'https://www.igoagritechfarms.in/products/specialized/aquaculture/floating-fish-feed-premium',
+        url: 'https://www.igoagritechfarms.com/products/specialized/aquaculture/floating-fish-feed-premium',
       ),
     ];
 

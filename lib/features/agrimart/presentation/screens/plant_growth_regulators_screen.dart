@@ -15,7 +15,7 @@ class PlantGrowthRegulatorsScreen extends ConsumerWidget {
         icon: Icons.auto_graph_rounded,
         image: 'assets/images/products/products/Agri-farming/Plant Growth Regulators/Nitro-Bloom Stimulant.webp',
         description: 'Advanced bloom booster and growth stimulant for flowering stage.',
-        url: 'https://www.igoagritechfarms.in/products/agri-inputs/pgrs/bloom-booster-nitro',
+        url: 'https://www.igoagritechfarms.com/products/agri-inputs/pgrs/bloom-booster-nitro',
       ),
     ];
 

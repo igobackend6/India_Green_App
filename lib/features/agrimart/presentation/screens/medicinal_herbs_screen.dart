@@ -14,7 +14,7 @@ class MedicinalHerbsScreen extends ConsumerWidget {
         icon: Icons.spa_rounded,
         image: 'assets/images/products/products/Horticulture Catalog/Medicinal & Herbs/Hydroponic Herb Starter Kit.webp',
         description: 'Complete setup for growing fresh, organic herbs hydroponically at home.',
-        url: 'https://www.igoagritechfarms.in/products/horticulture/herbs/fresh-herb-starter-kit',
+        url: 'https://www.igoagritechfarms.com/products/horticulture/herbs/fresh-herb-starter-kit',
       ),
     ];
 

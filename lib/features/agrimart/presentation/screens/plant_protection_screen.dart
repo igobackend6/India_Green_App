@@ -15,7 +15,7 @@ class PlantProtectionScreen extends ConsumerWidget {
         icon: Icons.shield_rounded,
         image: 'assets/images/products/products/Agri-farming/Plant Protection(IPM)/Advance IPM Kit.webp',
         description: 'Comprehensive organic integrated pest management kit.',
-        url: 'https://www.igoagritechfarms.in/products/agri-inputs/protection/organic-ipm-kit',
+        url: 'https://www.igoagritechfarms.com/products/agri-inputs/protection/organic-ipm-kit',
       ),
     ];
 

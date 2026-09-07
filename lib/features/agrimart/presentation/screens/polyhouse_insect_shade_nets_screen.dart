@@ -15,7 +15,7 @@ class PolyhouseInsectShadeNetsScreen extends ConsumerWidget {
         icon: Icons.grid_4x4_rounded,
         image: 'assets/images/products/products/Polyhouse Structure/Insect & Shade Nets/Anti-Insect Net (40 Mesh).webp',
         description: 'Fine mesh netting to block insects while allowing ventilation.',
-        url: 'https://www.igoagritechfarms.in/products/structure/nets/insect-net-uv-pro',
+        url: 'https://www.igoagritechfarms.com/products/structure/nets/insect-net-uv-pro',
       ),
     ];
 

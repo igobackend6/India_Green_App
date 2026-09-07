@@ -15,14 +15,14 @@ class PlantNutritionScreen extends ConsumerWidget {
         icon: Icons.science_rounded,
         image: 'assets/images/products/products/Agri-farming/Plant Nutrition & Fertilizers/Water Soluable NPK.webp',
         description: 'Balanced water-soluble fertilizer for vegetative growth.',
-        url: 'https://www.igoagritechfarms.in/products/agri-inputs/nutrition/water-soluble-npk',
+        url: 'https://www.igoagritechfarms.com/products/agri-inputs/nutrition/water-soluble-npk',
       ),
       (
         title: 'Nano Urea Liquid',
         icon: Icons.science_rounded,
         image: 'assets/images/products/products/Agri-farming/Plant Nutrition & Fertilizers/Nano Urea Liquid.webp',
         description: 'Highly efficient liquid urea for foliar application.',
-        url: 'https://www.igoagritechfarms.in/products/agri-inputs/nutrition/nano-urea-liquid',
+        url: 'https://www.igoagritechfarms.com/products/agri-inputs/nutrition/nano-urea-liquid',
       ),
     ];
 

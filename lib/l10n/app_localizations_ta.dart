@@ -86,7 +86,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String otpSentTo(String phone) {
-    return 'OTP sent to +91 $phone';
+    return '+91 $phone க்கு OTP அனுப்பப்பட்டது';
   }
 
   @override
@@ -95,19 +95,19 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get addToBasket => 'Add to Basket';
+  String get addToBasket => 'கூடையில் சேர்';
 
   @override
-  String get placeOrder => 'Place Order';
+  String get placeOrder => 'ஆர்டர் செய்யவும்';
 
   @override
   String basketItems(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count Items',
-      one: '1 Item',
-      zero: 'Empty Basket',
+      other: '$count பொருட்கள்',
+      one: '1 பொருள்',
+      zero: 'காலி கூடை',
     );
     return '$_temp0';
   }
@@ -116,49 +116,49 @@ class AppLocalizationsTa extends AppLocalizations {
   String get cropDoctor => 'பயிர் மருத்துவர்';
 
   @override
-  String get askCropDoctor => 'Describe your crop issue...';
+  String get askCropDoctor => 'உங்கள் பயிர் பிரச்சினையை விவரிக்கவும்...';
 
   @override
-  String get diagnosing => 'Analyzing leaf image...';
+  String get diagnosing => 'இலை படத்தை பகுப்பாய்வு செய்கிறது...';
 
   @override
-  String get farmWallet => 'Farm Wallet';
+  String get farmWallet => 'பண்ணை பணப்பை';
 
   @override
-  String get addMoney => 'Add Money';
+  String get addMoney => 'பணம் சேர்';
 
   @override
-  String get applyLoan => 'Apply for Loan';
+  String get applyLoan => 'கடனுக்கு விண்ணப்பிக்கவும்';
 
   @override
-  String get govtSchemes => 'Government Schemes';
+  String get govtSchemes => 'அரசு திட்டங்கள்';
 
   @override
-  String get academy => 'IGO Class Academy';
+  String get academy => 'IGO வகுப்பு அகாடமி';
 
   @override
-  String get startLesson => 'Start Lesson';
+  String get startLesson => 'பாடத்தைத் தொடங்கு';
 
   @override
-  String get lessonComplete => 'Lesson Completed!';
+  String get lessonComplete => 'பாடம் முடிந்தது!';
 
   @override
-  String get jobPortal => 'Agri Job Portal';
+  String get jobPortal => 'வேளாண் வேலை போர்டல்';
 
   @override
-  String get applyNow => 'Apply Now';
+  String get applyNow => 'இப்போது விண்ணப்பிக்கவும்';
 
   @override
-  String get franchiseOpps => 'Franchise Opportunities';
+  String get franchiseOpps => 'ஃபிரான்சைஸ் வாய்ப்புகள்';
 
   @override
-  String get jointVentures => 'Joint Ventures';
+  String get jointVentures => 'கூட்டு முயற்சிகள்';
 
   @override
-  String get landListings => 'Farmland Listings';
+  String get landListings => 'விவசாய நில பட்டியல்';
 
   @override
-  String get vendorDashboard => 'Vendor Dashboard';
+  String get vendorDashboard => 'விற்பனையாளர் டாஷ்போர்டு';
 
   @override
   String get myProfile => 'எனது சுயவிவரம்';
@@ -173,7 +173,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get markAllRead => 'அனைத்தையும் படித்ததாக குறிக்கவும்';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => 'அனைத்தையும் அழி';
 
   @override
   String get notifications => 'அறிவிப்புகள்';
@@ -215,46 +215,52 @@ class AppLocalizationsTa extends AppLocalizations {
   String get viewAll => 'அனைத்தையும் காண்க';
 
   @override
-  String get searchProducts => 'Search products...';
+  String get searchProducts => 'தயாரிப்புகளைத் தேடு...';
 
   @override
-  String get categories => 'Categories';
+  String get categories => 'வகைகள்';
 
   @override
   String get roleFarmer => 'விவசாயி';
 
   @override
-  String get roleFarmerDesc => 'உள்ளீடுகளை வாங்கவும், விளைபொருட்களை விற்கவும்';
+  String get roleFarmerDesc =>
+      'உள்ளீடுகளை வாங்கவும், விளைபொருட்களை விற்கவும், பயிர் ஆலோசனை பெறவும்';
 
   @override
   String get roleVendor => 'விற்பனையாளர்';
 
   @override
-  String get roleVendorDesc => 'தயாரிப்புகளை பட்டியலிடவும், நிர்வகிக்கவும்';
+  String get roleVendorDesc =>
+      'தயாரிப்புகளை பட்டியலிடவும், ஆர்டர்களை நிர்வகிக்கவும், பணம் பெறுதலைக் காணவும்';
 
   @override
   String get roleConsumer => 'நுகர்வோர்';
 
   @override
-  String get roleConsumerDesc => 'புதிய கரிம பொருட்களை வாங்கவும்';
+  String get roleConsumerDesc =>
+      'பண்ணைகளிலிருந்து புதிய கரிம பொருட்களை வாங்கவும்';
 
   @override
   String get roleInvestor => 'முதலீட்டாளர்';
 
   @override
-  String get roleInvestorDesc => 'விவசாய நிலங்களில் முதலீடு செய்யுங்கள்';
+  String get roleInvestorDesc =>
+      'விவசாய நிலங்கள், பத்திரங்கள் அல்லது ஃபிரான்சைஸில் முதலீடு செய்யுங்கள்';
 
   @override
   String get roleJobSeeker => 'வேலை தேடுபவர்';
 
   @override
-  String get roleJobSeekerDesc => 'விவசாய வேலைகளைத் தேடுங்கள்';
+  String get roleJobSeekerDesc =>
+      'இந்தியா முழுவதும் விவசாய வேலைகளைத் தேடுங்கள்';
 
   @override
   String get roleFranchise => 'பிரான்சைஸ் பார்ட்னர்';
 
   @override
-  String get roleFranchiseDesc => 'கீளைகளைத் தொடங்குங்கள்';
+  String get roleFranchiseDesc =>
+      'அதிகாரப்பூர்வ FICO கிளைகளைத் தொடங்கி வளர்க்கவும்';
 
   @override
   String get selectAtLeastOneRole =>
@@ -299,22 +305,22 @@ class AppLocalizationsTa extends AppLocalizations {
   String get aboutApp => 'INDIA GREEN APP பற்றி';
 
   @override
-  String get seedsCategory => 'விதைகள்';
+  String get seedsCategory => 'வேளாண்\nஉள்ளீடுகள்';
 
   @override
-  String get polyhouseCategory => 'Polyhouse Structure';
+  String get polyhouseCategory => 'பாலிஹவுஸ்\nகட்டமைப்பு';
 
   @override
-  String get horticultureCatalogCategory => 'Horticulture\nCatalog';
+  String get horticultureCatalogCategory => 'தோட்டக்கலை\nபட்டியல்';
 
   @override
-  String get controlAutomationCategory => 'Control &\nAutomation';
+  String get controlAutomationCategory => 'கட்டுப்பாடு &\nதானியங்கு';
 
   @override
-  String get digitalAgriCategory => 'Digital Agri\n& IoT';
+  String get digitalAgriCategory => 'டிஜிட்டல் வேளாண்\n& IoT';
 
   @override
-  String get postHarvestLegacyCategory => 'Post-Harvest\n& Legacy';
+  String get postHarvestLegacyCategory => 'அறுவடைக்குப் பின்\n& பாரம்பரியம்';
 
   @override
   String get featuredProducts => 'சிறப்பு தயாரிப்புகள்';

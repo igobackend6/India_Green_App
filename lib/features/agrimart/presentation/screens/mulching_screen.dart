@@ -15,7 +15,7 @@ class MulchingScreen extends ConsumerWidget {
         icon: Icons.layers_clear_rounded,
         image: 'assets/images/products/products/Agri-farming/Mulching & Weed Control/Premium Silver-Black Mulch.webp',
         description: 'Durable silver-black mulch film for superior weed control.',
-        url: 'https://www.igoagritechfarms.in/products/agri-inputs/mulching/silver-black-mulch',
+        url: 'https://www.igoagritechfarms.com/products/agri-inputs/mulching/silver-black-mulch',
       ),
     ];
 

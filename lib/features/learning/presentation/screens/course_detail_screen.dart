@@ -193,7 +193,7 @@ class CourseDetailScreen extends StatelessWidget {
             onPressed: () {
               launchInAppWebView(
                 context, 
-                'https://www.igoagritechfarms.in/courses#enquiry', 
+                'https://www.igoagritechfarms.com/courses#enquiry', 
                 '$title Enquiry',
               );
             },

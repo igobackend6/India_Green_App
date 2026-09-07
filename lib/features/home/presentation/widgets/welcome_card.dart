@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import '../../../../../core/router/route_names.dart';
 import '../../../../../core/theme/app_colors.dart';
 import '../../../../../l10n/app_localizations.dart';
 import '../providers/weather_provider.dart';
@@ -74,7 +75,7 @@ class WelcomeCard extends ConsumerWidget {
                 data: (data) {
               if (data == null) {
                 return GestureDetector(
-                  onTap: () => context.push('/profile'),
+                  onTap: () => context.push(Routes.profile),
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
@@ -130,7 +131,7 @@ class WelcomeCard extends ConsumerWidget {
               ),
             ),
             error: (_, __) => GestureDetector(
-              onTap: () => context.push('/profile'),
+              onTap: () => context.push(Routes.profile),
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(

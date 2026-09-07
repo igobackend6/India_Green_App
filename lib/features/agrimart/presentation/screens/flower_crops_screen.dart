@@ -14,7 +14,7 @@ class FlowerCropsScreen extends ConsumerWidget {
         icon: Icons.local_florist_rounded,
         image: 'assets/images/products/products/Horticulture Catalog/Flower Crops/Marigold F1 Gold Coin.webp',
         description: 'F1 Hybrid Marigold seeds for bright, uniform, and high-yielding blooms.',
-        url: 'https://www.igoagritechfarms.in/products/horticulture/flowers/marigold-pro-tray',
+        url: 'https://www.igoagritechfarms.com/products/horticulture/flowers/marigold-pro-tray',
       ),
     ];
 

@@ -14,7 +14,7 @@ class ExoticFruitCropsScreen extends ConsumerWidget {
         icon: Icons.apple_rounded,
         image: 'assets/images/products/products/Horticulture Catalog/Exotic Fruit Crops/Elite Grafted Fruit Plant Combo.jpeg',
         description: 'Selected premium grafted fruit plants for rapid growth and optimal yield.',
-        url: 'https://www.igoagritechfarms.in/products/horticulture/fruits/grafted-fruit-plants-combo',
+        url: 'https://www.igoagritechfarms.com/products/horticulture/fruits/grafted-fruit-plants-combo',
       ),
     ];
 

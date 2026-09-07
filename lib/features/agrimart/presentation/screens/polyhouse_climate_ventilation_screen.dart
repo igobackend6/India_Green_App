@@ -15,7 +15,7 @@ class PolyhouseClimateVentilationScreen extends ConsumerWidget {
         icon: Icons.air_rounded,
         image: 'assets/images/products/products/Polyhouse Structure/Climate & Ventilation/IGO Industrial Exhaust Fan.webp',
         description: 'High-performance exhaust fan for greenhouse ventilation.',
-        url: 'https://www.igoagritechfarms.in/products/structure/ventilation/axial-exhaust-fan-50',
+        url: 'https://www.igoagritechfarms.com/products/structure/ventilation/axial-exhaust-fan-50',
       ),
     ];
 

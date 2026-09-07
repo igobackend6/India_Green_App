@@ -1,0 +1,157 @@
+{
+  "@@locale": "ml",
+  "appTitle": "ഇന്ത്യ ഗ്രീൻ ആപ്പ്",
+  "tagline": "ഒരു ആപ്പ്. എല്ലാ കർഷകനും. എല്ലാ പങ്കാളിക്കും.",
+  "navHome": "ഹോം",
+  "navMarket": "ഉൽപ്പന്നങ്ങൾ",
+  "navMandi": "മണ്ടി",
+  "navServices": "സേവനങ്ങൾ",
+  "navAiDoc": "AI ഡോക്ടർ",
+  "navHubs": "ഹബ്ബുകൾ",
+  "welcomeUser": "സ്വാഗതം, {name}!",
+  "@welcomeUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "salemFarmerHub": "സേലം കർഷക ഹബ്",
+  "selectLanguage": "നിങ്ങളുടെ ഭാഷ തിരഞ്ഞെടുക്കുക",
+  "selectLanguageSubtitle": "തുടരാൻ നിങ്ങൾക്കിഷ്ടമുള്ള ഭാഷ തിരഞ്ഞെടുക്കുക",
+  "selectRoles": "നിങ്ങളുടെ റോളുകൾ തിരഞ്ഞെടുക്കുക",
+  "selectRolesSubtitle": "നിങ്ങളെ വിവരിക്കുന്ന ഒന്നോ അതിലധികമോ റോളുകൾ തിരഞ്ഞെടുക്കുക",
+  "continueBtn": "തുടരുക",
+  "loginWithOtp": "OTP ഉപയോഗിച്ച് ലോഗിൻ ചെയ്യുക",
+  "enterPhone": "മൊബൈൽ നമ്പർ നൽകുക",
+  "enterOtp": "6 അക്ക OTP നൽകുക",
+  "verifyOtp": "OTP സ്ഥിരീകരിക്കുക",
+  "sendOtp": "OTP അയയ്ക്കുക",
+  "resendOtp": "OTP വീണ്ടും അയയ്ക്കുക",
+  "enterName": "നിങ്ങളുടെ പേര് നൽകുക",
+  "enterPincode": "പിൻകോഡ് നൽകുക",
+  "phoneHint": "9876543210",
+  "otpSentTo": "+91 {phone} എന്നതിലേക്ക് OTP അയച്ചു",
+  "@otpSentTo": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "pricePerQuintal": "₹{price}/Qtl",
+  "@pricePerQuintal": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "addToBasket": "ബാസ്കറ്റിലേക്ക് ചേർക്കുക",
+  "placeOrder": "ഓർഡർ ചെയ്യുക",
+  "basketItems": "{count, plural, =0{കാലി ബാസ്കറ്റ്} =1{1 ഇനം} other{{count} ഇനങ്ങൾ}}",
+  "@basketItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cropDoctor": "വിള ഡോക്ടർ",
+  "askCropDoctor": "നിങ്ങളുടെ വിള പ്രശ്നം വിവരിക്കുക...",
+  "diagnosing": "ഇല ചിത്രം വിശകലനം ചെയ്യുന്നു...",
+  "farmWallet": "ഫാം വാലറ്റ്",
+  "addMoney": "പണം ചേർക്കുക",
+  "applyLoan": "വായ്പയ്ക്ക് അപേക്ഷിക്കുക",
+  "govtSchemes": "സർക്കാർ പദ്ധതികൾ",
+  "academy": "IGO ക്ലാസ് അക്കാദമി",
+  "startLesson": "പാഠം ആരംഭിക്കുക",
+  "lessonComplete": "പാഠം പൂർത്തിയായി!",
+  "jobPortal": "കാർഷിക ജോലി പോർട്ടൽ",
+  "applyNow": "ഇപ്പോൾ അപേക്ഷിക്കുക",
+  "franchiseOpps": "ഫ്രാഞ്ചൈസി അവസരങ്ങൾ",
+  "jointVentures": "സംയുക്ത സംരംഭങ്ങൾ",
+  "landListings": "കൃഷിഭൂമി ലിസ്റ്റിംഗുകൾ",
+  "vendorDashboard": "വെണ്ടർ ഡാഷ്ബോർഡ്",
+  "myProfile": "എന്റെ പ്രൊഫൈൽ",
+  "settings": "സെറ്റിംഗുകൾ",
+  "logout": "ലോഗൗട്ട്",
+  "markAllRead": "എല്ലാം വായിച്ചതായി അടയാളപ്പെടുത്തുക",
+  "clearAll": "എല്ലാം മായ്ക്കുക",
+  "notifications": "അറിയിപ്പുകൾ",
+  "noNotifications": "ഇതുവരെ അറിയിപ്പുകളൊന്നുമില്ല",
+  "hubProfile": "എന്റെ പ്രൊഫൈൽ",
+  "hubVendor": "വെണ്ടർ ഡാഷ്ബോർഡ്",
+  "hubFinance": "ഫാം വാലറ്റ് & വായ്പകൾ",
+  "hubLearn": "ക്ലാസ് അക്കാദമി",
+  "hubOpps": "എസ്റ്റേറ്റുകൾ & ഫ്രാഞ്ചൈസികൾ",
+  "hubJobs": "കാർഷിക ജോലി പോർട്ടൽ",
+  "comingSoon": "ഉടൻ വരുന്നു",
+  "featureUnderDevelopment": "ഈ ഫീച്ചർ വികസനത്തിലാണ്",
+  "quickActions": "ദ്രുത പ്രവർത്തനങ്ങൾ",
+  "igoBrands": "IGO ഗ്രൂപ്പുകൾ",
+  "viewAll": "എല്ലാം കാണുക",
+  "searchProducts": "ഉൽപ്പന്നങ്ങൾ തിരയുക...",
+  "categories": "വിഭാഗങ്ങൾ",
+  "roleFarmer": "കർഷകൻ",
+  "roleFarmerDesc": "ഇൻപുട്ടുകൾ വാങ്ങുക, ഉൽപ്പന്നം വിൽക്കുക, വിള ഉപദേശം നേടുക",
+  "roleVendor": "വെണ്ടർ",
+  "roleVendorDesc": "ഉൽപ്പന്നങ്ങൾ ലിസ്റ്റ് ചെയ്യുക, ഓർഡറുകൾ കൈകാര്യം ചെയ്യുക, പേയ്‌മെന്റുകൾ കാണുക",
+  "roleConsumer": "ഉപഭോക്താവ്",
+  "roleConsumerDesc": "ഫാമുകളിൽ നിന്ന് പുതിയ ജൈവ ഉൽപ്പന്നങ്ങൾ വാങ്ങുക",
+  "roleInvestor": "നിക്ഷേപകൻ",
+  "roleInvestorDesc": "കൃഷിഭൂമി, ബോണ്ടുകൾ, അല്ലെങ്കിൽ ഫ്രാഞ്ചൈസിയിൽ നിക്ഷേപിക്കുക",
+  "roleJobSeeker": "ജോലി അന്വേഷകൻ",
+  "roleJobSeekerDesc": "ഇന്ത്യയിലുടനീളം കാർഷിക ജോലികൾ തിരയുക",
+  "roleFranchise": "ഫ്രാഞ്ചൈസി പങ്കാളി",
+  "roleFranchiseDesc": "ഔദ്യോഗിക FICO ശാഖകൾ ആരംഭിച്ച് വളർത്തുക",
+  "selectAtLeastOneRole": "കുറഞ്ഞത് ഒരു റോൾ എങ്കിലും തിരഞ്ഞെടുക്കുക",
+  "continueWithRoles": "{count} റോളുകളുമായി തുടരുക",
+  "@continueWithRoles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "buyInputs": "ഇൻപുട്ടുകൾ വാങ്ങുക",
+  "sellProduce": "ഉൽപ്പന്നം വിൽക്കുക",
+  "mandiPrices": "മണ്ടി വിലകൾ",
+  "loanApply": "വായ്പ അപേക്ഷ",
+  "agriJobs": "കാർഷിക ജോലികൾ",
+  "igoAcademy": "IGO അക്കാദമി",
+  "franchise": "ഫ്രാഞ്ചൈസി",
+  "language": "ഭാഷ",
+  "darkMode": "ഡാർക്ക് മോഡ്",
+  "notificationPrefs": "അറിയിപ്പ് മുൻഗണനകൾ",
+  "aboutApp": "INDIA GREEN APP-നെക്കുറിച്ച്",
+  "seedsCategory": "കാർഷിക\nഇൻപുട്ടുകൾ",
+  "polyhouseCategory": "പോളിഹൗസ്\nഘടന",
+  "horticultureCatalogCategory": "ഹോർട്ടികൾച്ചർ\nകാറ്റലോഗ്",
+  "controlAutomationCategory": "നിയന്ത്രണവും\nഓട്ടോമേഷനും",
+  "digitalAgriCategory": "ഡിജിറ്റൽ കൃഷി\n& IoT",
+  "postHarvestLegacyCategory": "വിളവെടുപ്പിന് ശേഷം\n& ലെഗസി",
+  "featuredProducts": "ഫീച്ചർ ചെയ്ത ഉൽപ്പന്നങ്ങൾ",
+  "addToCart": "കാർട്ടിലേക്ക് ചേർക്കുക",
+  "liveMandiPrices": "തത്സമയ മണ്ടി വിലകൾ",
+  "salemApmcMarket": "സേലം APMC മാർക്കറ്റ്",
+  "change": "മാറ്റം",
+  "arrival": "വരവ്",
+  "scanCropDisease": "വിള രോഗം സ്കാൻ ചെയ്യുക",
+  "scanCropDiseaseDesc": "തൽക്ഷണ AI രോഗനിർണയവും ചികിത്സാ ശുപാർശകളും ലഭിക്കാൻ നിങ്ങളുടെ ബാധിച്ച വിള ഇലയുടെ ഫോട്ടോ എടുക്കുക.",
+  "openCamera": "ക്യാമറ തുറക്കുക",
+  "analyzePhoto": "ഫോട്ടോ വിശകലനം ചെയ്യുക",
+  "analyzing": "നിങ്ങളുടെ വിള വിശകലനം ചെയ്യുന്നു...",
+  "navProjects": "പ്രോജക്ടുകൾ",
+  "navCourse": "കോഴ്സ്",
+  "projectsTitle": "പ്രോജക്ടുകൾ",
+  "agriFarmingProjects": "കാർഷിക പ്രോജക്ടുകൾ",
+  "aquacultureProjects": "അക്വാകൾച്ചർ പ്രോജക്ടുകൾ",
+  "livestockFarmingProjects": "കന്നുകാലി വളർത്തൽ പ്രോജക്ടുകൾ",
+  "farmEngineeringProjects": "കാർഷിക എഞ്ചിനീയറിംഗ് പ്രോജക്ടുകൾ",
+  "userDetailsTitle": "നിങ്ങളെക്കുറിച്ച് പറയൂ",
+  "userDetailsSubtitle": "നിങ്ങളുടെ അനുഭവം വ്യക്തിഗതമാക്കാൻ ചില വിവരങ്ങൾ",
+  "enterAddress": "നിങ്ങളുടെ ഗ്രാമം / പട്ടണം നൽകുക",
+  "addressHint": "ഗ്രാമം, താലൂക്ക്, ജില്ല",
+  "completeProfile": "പ്രൊഫൈൽ പൂർത്തിയാക്കി ആപ്പിലേക്ക് പ്രവേശിക്കുക"
+}

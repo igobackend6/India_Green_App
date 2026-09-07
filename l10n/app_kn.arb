@@ -1,0 +1,157 @@
+{
+  "@@locale": "kn",
+  "appTitle": "ಇಂಡಿಯಾ ಗ್ರೀನ್ ಆ್ಯಪ್",
+  "tagline": "ಒಂದು ಆ್ಯಪ್. ಪ್ರತಿ ರೈತ. ಪ್ರತಿ ಪಾಲುದಾರ.",
+  "navHome": "ಹೋಮ್",
+  "navMarket": "ಉತ್ಪನ್ನಗಳು",
+  "navMandi": "ಮಂಡಿ",
+  "navServices": "ಸೇವೆಗಳು",
+  "navAiDoc": "AI ಡಾಕ್ಟರ್",
+  "navHubs": "ಹಬ್‌ಗಳು",
+  "welcomeUser": "ಸ್ವಾಗತ, {name}!",
+  "@welcomeUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "salemFarmerHub": "ಸೇಲಂ ರೈತ ಹಬ್",
+  "selectLanguage": "ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+  "selectLanguageSubtitle": "ಮುಂದುವರಿಸಲು ನಿಮ್ಮ ಆದ್ಯತೆಯ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+  "selectRoles": "ನಿಮ್ಮ ಪಾತ್ರಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+  "selectRolesSubtitle": "ನಿಮ್ಮನ್ನು ವಿವರಿಸುವ ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಪಾತ್ರಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+  "continueBtn": "ಮುಂದುವರಿಸಿ",
+  "loginWithOtp": "OTP ಮೂಲಕ ಲಾಗಿನ್ ಮಾಡಿ",
+  "enterPhone": "ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+  "enterOtp": "6 ಅಂಕಿಗಳ OTP ನಮೂದಿಸಿ",
+  "verifyOtp": "OTP ಪರಿಶೀಲಿಸಿ",
+  "sendOtp": "OTP ಕಳುಹಿಸಿ",
+  "resendOtp": "OTP ಅನ್ನು ಮತ್ತೆ ಕಳುಹಿಸಿ",
+  "enterName": "ನಿಮ್ಮ ಹೆಸರನ್ನು ನಮೂದಿಸಿ",
+  "enterPincode": "ಪಿನ್‌ಕೋಡ್ ನಮೂದಿಸಿ",
+  "phoneHint": "9876543210",
+  "otpSentTo": "+91 {phone} ಗೆ OTP ಕಳುಹಿಸಲಾಗಿದೆ",
+  "@otpSentTo": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "pricePerQuintal": "₹{price}/Qtl",
+  "@pricePerQuintal": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "addToBasket": "ಬಾಸ್ಕೆಟ್‌ಗೆ ಸೇರಿಸಿ",
+  "placeOrder": "ಆರ್ಡರ್ ಮಾಡಿ",
+  "basketItems": "{count, plural, =0{ಖಾಲಿ ಬಾಸ್ಕೆಟ್} =1{1 ವಸ್ತು} other{{count} ವಸ್ತುಗಳು}}",
+  "@basketItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cropDoctor": "ಬೆಳೆ ವೈದ್ಯ",
+  "askCropDoctor": "ನಿಮ್ಮ ಬೆಳೆ ಸಮಸ್ಯೆಯನ್ನು ವಿವರಿಸಿ...",
+  "diagnosing": "ಎಲೆಯ ಚಿತ್ರವನ್ನು ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ...",
+  "farmWallet": "ಫಾರ್ಮ್ ವಾಲೆಟ್",
+  "addMoney": "ಹಣ ಸೇರಿಸಿ",
+  "applyLoan": "ಸಾಲಕ್ಕಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ",
+  "govtSchemes": "ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು",
+  "academy": "IGO ಕ್ಲಾಸ್ ಅಕಾಡೆಮಿ",
+  "startLesson": "ಪಾಠ ಪ್ರಾರಂಭಿಸಿ",
+  "lessonComplete": "ಪಾಠ ಪೂರ್ಣಗೊಂಡಿದೆ!",
+  "jobPortal": "ಕೃಷಿ ಉದ್ಯೋಗ ಪೋರ್ಟಲ್",
+  "applyNow": "ಈಗಲೇ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ",
+  "franchiseOpps": "ಫ್ರಾಂಚೈಸ್ ಅವಕಾಶಗಳು",
+  "jointVentures": "ಜಂಟಿ ಉದ್ಯಮಗಳು",
+  "landListings": "ಕೃಷಿ ಭೂಮಿ ಪಟ್ಟಿಗಳು",
+  "vendorDashboard": "ಮಾರಾಟಗಾರ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+  "myProfile": "ನನ್ನ ಪ್ರೊಫೈಲ್",
+  "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+  "logout": "ಲಾಗ್ ಔಟ್",
+  "markAllRead": "ಎಲ್ಲವನ್ನೂ ಓದಿದಂತೆ ಗುರುತಿಸಿ",
+  "clearAll": "ಎಲ್ಲವನ್ನೂ ತೆರವುಗೊಳಿಸಿ",
+  "notifications": "ಅಧಿಸೂಚನೆಗಳು",
+  "noNotifications": "ಇನ್ನೂ ಯಾವುದೇ ಅಧಿಸೂಚನೆಗಳಿಲ್ಲ",
+  "hubProfile": "ನನ್ನ ಪ್ರೊಫೈಲ್",
+  "hubVendor": "ಮಾರಾಟಗಾರ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+  "hubFinance": "ಫಾರ್ಮ್ ವಾಲೆಟ್ ಮತ್ತು ಸಾಲಗಳು",
+  "hubLearn": "ಕ್ಲಾಸ್ ಅಕಾಡೆಮಿ",
+  "hubOpps": "ಎಸ್ಟೇಟ್‌ಗಳು ಮತ್ತು ಫ್ರಾಂಚೈಸ್‌ಗಳು",
+  "hubJobs": "ಕೃಷಿ ಉದ್ಯೋಗ ಪೋರ್ಟಲ್",
+  "comingSoon": "ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ",
+  "featureUnderDevelopment": "ಈ ವೈಶಿಷ್ಟ್ಯ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿದೆ",
+  "quickActions": "ತ್ವರಿತ ಕ್ರಿಯೆಗಳು",
+  "igoBrands": "IGO ಗ್ರೂಪ್ಸ್",
+  "viewAll": "ಎಲ್ಲಾ ವೀಕ್ಷಿಸಿ",
+  "searchProducts": "ಉತ್ಪನ್ನಗಳನ್ನು ಹುಡುಕಿ...",
+  "categories": "ವರ್ಗಗಳು",
+  "roleFarmer": "ರೈತ",
+  "roleFarmerDesc": "ಇನ್‌ಪುಟ್‌ಗಳನ್ನು ಖರೀದಿಸಿ, ಉತ್ಪನ್ನಗಳನ್ನು ಮಾರಿ, ಬೆಳೆ ಸಲಹೆ ಪಡೆಯಿರಿ",
+  "roleVendor": "ಮಾರಾಟಗಾರ",
+  "roleVendorDesc": "ಉತ್ಪನ್ನಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಿ, ಆರ್ಡರ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಿ, ಪಾವತಿಗಳನ್ನು ವೀಕ್ಷಿಸಿ",
+  "roleConsumer": "ಗ್ರಾಹಕ",
+  "roleConsumerDesc": "ಫಾರ್ಮ್‌ಗಳಿಂದ ತಾಜಾ ಸಾವಯವ ಉತ್ಪನ್ನಗಳನ್ನು ಖರೀದಿಸಿ",
+  "roleInvestor": "ಹೂಡಿಕೆದಾರ",
+  "roleInvestorDesc": "ಕೃಷಿ ಭೂಮಿ, ಬಾಂಡ್‌ಗಳು ಅಥವಾ ಫ್ರಾಂಚೈಸ್‌ನಲ್ಲಿ ಹೂಡಿಕೆ ಮಾಡಿ",
+  "roleJobSeeker": "ಉದ್ಯೋಗಾಕಾಂಕ್ಷಿ",
+  "roleJobSeekerDesc": "ಭಾರತದಾದ್ಯಂತ ಕೃಷಿ ಉದ್ಯೋಗಗಳನ್ನು ಹುಡುಕಿ",
+  "roleFranchise": "ಫ್ರಾಂಚೈಸ್ ಪಾಲುದಾರ",
+  "roleFranchiseDesc": "ಅಧಿಕೃತ FICO ಶಾಖೆಗಳನ್ನು ಪ್ರಾರಂಭಿಸಿ ಮತ್ತು ಬೆಳೆಸಿ",
+  "selectAtLeastOneRole": "ಕನಿಷ್ಠ ಒಂದು ಪಾತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+  "continueWithRoles": "{count} ಪಾತ್ರಗಳೊಂದಿಗೆ ಮುಂದುವರಿಸಿ",
+  "@continueWithRoles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "buyInputs": "ಇನ್‌ಪುಟ್‌ಗಳನ್ನು ಖರೀದಿಸಿ",
+  "sellProduce": "ಉತ್ಪನ್ನಗಳನ್ನು ಮಾರಿ",
+  "mandiPrices": "ಮಂಡಿ ಬೆಲೆಗಳು",
+  "loanApply": "ಸಾಲ ಅರ್ಜಿ",
+  "agriJobs": "ಕೃಷಿ ಉದ್ಯೋಗಗಳು",
+  "igoAcademy": "IGO ಅಕಾಡೆಮಿ",
+  "franchise": "ಫ್ರಾಂಚೈಸ್",
+  "language": "ಭಾಷೆ",
+  "darkMode": "ಡಾರ್ಕ್ ಮೋಡ್",
+  "notificationPrefs": "ಅಧಿಸೂಚನೆ ಆದ್ಯತೆಗಳು",
+  "aboutApp": "INDIA GREEN APP ಬಗ್ಗೆ",
+  "seedsCategory": "ಕೃಷಿ\nಇನ್‌ಪುಟ್‌ಗಳು",
+  "polyhouseCategory": "ಪಾಲಿಹೌಸ್\nರಚನೆ",
+  "horticultureCatalogCategory": "ತೋಟಗಾರಿಕೆ\nಕ್ಯಾಟಲಾಗ್",
+  "controlAutomationCategory": "ನಿಯಂತ್ರಣ ಮತ್ತು\nಆಟೊಮೇಶನ್",
+  "digitalAgriCategory": "ಡಿಜಿಟಲ್ ಕೃಷಿ\n& IoT",
+  "postHarvestLegacyCategory": "ಕೊಯ್ಲಿನ ನಂತರ\n& ಪಾರಂಪರಿಕ",
+  "featuredProducts": "ವೈಶಿಷ್ಟ್ಯಗೊಳಿಸಿದ ಉತ್ಪನ್ನಗಳು",
+  "addToCart": "ಕಾರ್ಟ್‌ಗೆ ಸೇರಿಸಿ",
+  "liveMandiPrices": "ಲೈವ್ ಮಂಡಿ ಬೆಲೆಗಳು",
+  "salemApmcMarket": "ಸೇಲಂ APMC ಮಾರುಕಟ್ಟೆ",
+  "change": "ಬದಲಾವಣೆ",
+  "arrival": "ಆಗಮನ",
+  "scanCropDisease": "ಬೆಳೆ ರೋಗವನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
+  "scanCropDiseaseDesc": "ತಕ್ಷಣದ AI ರೋಗನಿರ್ಣಯ ಮತ್ತು ಚಿಕಿತ್ಸಾ ಶಿಫಾರಸುಗಳನ್ನು ಪಡೆಯಲು ನಿಮ್ಮ ಬೆಳೆಯ ಪೀಡಿತ ಎಲೆಯ ಫೋಟೋ ತೆಗೆಯಿರಿ.",
+  "openCamera": "ಕ್ಯಾಮೆರಾ ತೆರೆಯಿರಿ",
+  "analyzePhoto": "ಫೋಟೋ ವಿಶ್ಲೇಷಿಸಿ",
+  "analyzing": "ನಿಮ್ಮ ಬೆಳೆಯನ್ನು ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ...",
+  "navProjects": "ಯೋಜನೆಗಳು",
+  "navCourse": "ಕೋರ್ಸ್",
+  "projectsTitle": "ಯೋಜನೆಗಳು",
+  "agriFarmingProjects": "ಕೃಷಿ ಯೋಜನೆಗಳು",
+  "aquacultureProjects": "ಜಲಕೃಷಿ ಯೋಜನೆಗಳು",
+  "livestockFarmingProjects": "ಜಾನುವಾರು ಸಾಕಣೆ ಯೋಜನೆಗಳು",
+  "farmEngineeringProjects": "ಕೃಷಿ ಎಂಜಿನಿಯರಿಂಗ್ ಯೋಜನೆಗಳು",
+  "userDetailsTitle": "ನಿಮ್ಮ ಬಗ್ಗೆ ಹೇಳಿ",
+  "userDetailsSubtitle": "ನಿಮ್ಮ ಅನುಭವವನ್ನು ವೈಯಕ್ತಿಕಗೊಳಿಸಲು ಕೆಲವು ವಿವರಗಳು",
+  "enterAddress": "ನಿಮ್ಮ ಗ್ರಾಮ / ಪಟ್ಟಣವನ್ನು ನಮೂದಿಸಿ",
+  "addressHint": "ಗ್ರಾಮ, ತಾಲೂಕು, ಜಿಲ್ಲೆ",
+  "completeProfile": "ಪ್ರೊಫೈಲ್ ಪೂರ್ಣಗೊಳಿಸಿ ಮತ್ತು ಆ್ಯಪ್ ಪ್ರವೇಶಿಸಿ"
+}

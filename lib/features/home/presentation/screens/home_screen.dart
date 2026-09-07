@@ -9,6 +9,8 @@ import '../../../onboarding/providers/auth_provider.dart';
 import '../widgets/welcome_card.dart';
 import '../widgets/ad_banner.dart';
 import '../widgets/brand_carousel.dart';
+import '../widgets/innovation_growth_section.dart';
+import '../widgets/vision_mission_section.dart';
 import '../../../../../l10n/app_localizations.dart';
 
 // ── Home screen ───────────────────────────────────────────────────────────────
@@ -81,6 +83,16 @@ class HomeScreen extends ConsumerWidget {
 
           const SizedBox(height: 12),
           const BrandCarousel(),
+
+          const SizedBox(height: 28),
+
+          // ── Innovation & Profitable Growth ─
+          const InnovationGrowthSection(),
+
+          const SizedBox(height: 28),
+
+          // ── Our Vision & Mission ───────────
+          const VisionMissionSection(),
 
           const SizedBox(height: 32),
         ],

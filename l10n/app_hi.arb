@@ -8,6 +8,15 @@
   "navServices": "सेवाएं",
   "navAiDoc": "AI डॉक्टर",
   "navHubs": "हब",
+  "welcomeUser": "स्वागत है, {name}!",
+  "@welcomeUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "salemFarmerHub": "सेलम फार्मर हब",
   "selectLanguage": "अपनी भाषा चुनें",
   "selectLanguageSubtitle": "जारी रखने के लिए अपनी पसंदीदा भाषा चुनें",
   "selectRoles": "अपनी भूमिकाएँ चुनें",
@@ -21,78 +30,118 @@
   "resendOtp": "OTP पुनः भेजें",
   "enterName": "अपना नाम दर्ज करें",
   "enterPincode": "पिनकोड दर्ज करें",
-  "logout": "लॉग आउट",
-  "notifications": "सूचनाएं",
+  "phoneHint": "9876543210",
+  "otpSentTo": "+91 {phone} पर OTP भेजा गया",
+  "@otpSentTo": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "pricePerQuintal": "₹{price}/Qtl",
+  "@pricePerQuintal": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "addToBasket": "बास्केट में जोड़ें",
+  "placeOrder": "ऑर्डर करें",
+  "basketItems": "{count, plural, =0{खाली बास्केट} =1{1 आइटम} other{{count} आइटम}}",
+  "@basketItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cropDoctor": "फसल डॉक्टर",
+  "askCropDoctor": "अपनी फसल की समस्या बताएं...",
+  "diagnosing": "पत्ती की छवि का विश्लेषण हो रहा है...",
+  "farmWallet": "फार्म वॉलेट",
+  "addMoney": "पैसे जोड़ें",
+  "applyLoan": "ऋण के लिए आवेदन करें",
+  "govtSchemes": "सरकारी योजनाएं",
+  "academy": "IGO क्लास अकादमी",
+  "startLesson": "पाठ शुरू करें",
+  "lessonComplete": "पाठ पूरा हुआ!",
+  "jobPortal": "कृषि जॉब पोर्टल",
+  "applyNow": "अभी आवेदन करें",
+  "franchiseOpps": "फ्रेंचाइजी अवसर",
+  "jointVentures": "संयुक्त उद्यम",
+  "landListings": "कृषि भूमि लिस्टिंग",
+  "vendorDashboard": "विक्रेता डैशबोर्ड",
   "myProfile": "मेरी प्रोफ़ाइल",
   "settings": "सेटिंग्स",
-  "comingSoon": "जल्द आ रहा है",
-  "featureUnderDevelopment": "यह सुविधा विकास के अधीन है",
-  
-  "welcomeUser": "स्वागत है, {name}!",
-  "@welcomeUser": { "placeholders": { "name": { "type": "String" } } },
-  "salemFarmerHub": "सेलम फार्मर हब",
-  "quickActions": "त्वरित कार्रवाइयां",
-  "buyInputs": "इनपुट खरीदें",
-  "sellProduce": "उपज बेचें",
-  "mandiPrices": "मंडी की कीमतें",
-  "cropDoctor": "फसल डॉक्टर",
-  "loanApply": "ऋण आवेदन",
-  "agriJobs": "कृषि नौकरियां",
-  "igoAcademy": "IGO अकादमी",
-  "franchise": "फ्रेंचाइजी",
-  "igoBrands": "IGO ग्रुप्स",
-  "viewAll": "सभी देखें",
+  "logout": "लॉग आउट",
   "markAllRead": "सभी को पढ़ा हुआ चिह्नित करें",
+  "clearAll": "सभी साफ़ करें",
+  "notifications": "सूचनाएं",
   "noNotifications": "अभी तक कोई सूचना नहीं",
-
-  "roleFarmer": "किसान",
-  "roleFarmerDesc": "इनपुट खरीदें, उपज बेचें",
-  "roleVendor": "विक्रेता",
-  "roleVendorDesc": "उत्पादों को सूचीबद्ध करें",
-  "roleConsumer": "उपभोक्ता",
-  "roleConsumerDesc": "जैविक उत्पाद खरीदें",
-  "roleInvestor": "निवेशक",
-  "roleInvestorDesc": "कृषि भूमि में निवेश करें",
-  "roleJobSeeker": "नौकरी चाहने वाला",
-  "roleJobSeekerDesc": "कृषि नौकरियां खोजें",
-  "roleFranchise": "फ्रेंचाइजी पार्टनर",
-  "roleFranchiseDesc": "शाखाएं शुरू करें",
-  "selectAtLeastOneRole": "कम से कम एक भूमिका चुनें",
-  "continueWithRoles": "{count} भूमिकाओं के साथ जारी रखें",
-  "@continueWithRoles": { "placeholders": { "count": { "type": "int" } } },
-
   "hubProfile": "मेरी प्रोफ़ाइल",
   "hubVendor": "विक्रेता डैशबोर्ड",
   "hubFinance": "फार्म वॉलेट और ऋण",
   "hubLearn": "क्लास अकादमी",
   "hubOpps": "संपदाएं और फ्रेंचाइजी",
   "hubJobs": "कृषि नौकरी पोर्टल",
-
+  "comingSoon": "जल्द आ रहा है",
+  "featureUnderDevelopment": "यह सुविधा विकास के अधीन है",
+  "quickActions": "त्वरित कार्रवाइयां",
+  "igoBrands": "IGO ग्रुप्स",
+  "viewAll": "सभी देखें",
+  "searchProducts": "उत्पाद खोजें...",
+  "categories": "श्रेणियां",
+  "roleFarmer": "किसान",
+  "roleFarmerDesc": "इनपुट खरीदें, उपज बेचें, फसल सलाह पाएं",
+  "roleVendor": "विक्रेता",
+  "roleVendorDesc": "उत्पाद सूचीबद्ध करें, ऑर्डर प्रबंधित करें, भुगतान देखें",
+  "roleConsumer": "उपभोक्ता",
+  "roleConsumerDesc": "खेतों से ताज़ा जैविक उत्पाद खरीदें",
+  "roleInvestor": "निवेशक",
+  "roleInvestorDesc": "कृषि भूमि, बॉन्ड या फ्रेंचाइजी में निवेश करें",
+  "roleJobSeeker": "नौकरी चाहने वाला",
+  "roleJobSeekerDesc": "पूरे भारत में कृषि नौकरियां खोजें",
+  "roleFranchise": "फ्रेंचाइजी पार्टनर",
+  "roleFranchiseDesc": "आधिकारिक FICO शाखाएं शुरू करें और बढ़ाएं",
+  "selectAtLeastOneRole": "कम से कम एक भूमिका चुनें",
+  "continueWithRoles": "{count} भूमिकाओं के साथ जारी रखें",
+  "@continueWithRoles": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "buyInputs": "इनपुट खरीदें",
+  "sellProduce": "उपज बेचें",
+  "mandiPrices": "मंडी की कीमतें",
+  "loanApply": "ऋण आवेदन",
+  "agriJobs": "कृषि नौकरियां",
+  "igoAcademy": "IGO अकादमी",
+  "franchise": "फ्रेंचाइजी",
   "language": "भाषा",
   "darkMode": "डार्क मोड",
   "notificationPrefs": "सूचना प्राथमिकताएँ",
   "aboutApp": "INDIA GREEN APP के बारे में",
-
-  "seedsCategory": "बीज",
-  "polyhouseCategory": "Polyhouse Structure",
-  "horticultureCatalogCategory": "Horticulture\nCatalog",
-  "controlAutomationCategory": "Control &\nAutomation",
-  "digitalAgriCategory": "Digital Agri\n& IoT",
-  "postHarvestLegacyCategory": "Post-Harvest\n& Legacy",
+  "seedsCategory": "कृषि खेती\nइनपुट",
+  "polyhouseCategory": "पॉलीहाउस\nसंरचना",
+  "horticultureCatalogCategory": "बागवानी\nसूची",
+  "controlAutomationCategory": "नियंत्रण एवं\nस्वचालन",
+  "digitalAgriCategory": "डिजिटल कृषि\nएवं IoT",
+  "postHarvestLegacyCategory": "फसल कटाई बाद\nएवं अन्य",
   "featuredProducts": "विशेष उत्पाद",
   "addToCart": "कार्ट में जोड़ें",
-
   "liveMandiPrices": "लाइव मंडी भाव",
   "salemApmcMarket": "सालेम APMC बाजार",
   "change": "बदलें",
   "arrival": "आवक",
-
   "scanCropDisease": "फसल रोग स्कैन करें",
   "scanCropDiseaseDesc": "तत्काल AI निदान और उपचार सिफारिशें पाने के लिए प्रभावित फसल की पत्ती की फोटो लें।",
   "openCamera": "कैमरा खोलें",
   "analyzePhoto": "फोटो विश्लेषण करें",
   "analyzing": "आपकी फसल का विश्लेषण हो रहा है...",
-
   "navProjects": "परियोजनाएं",
   "navCourse": "कोर्स",
   "projectsTitle": "परियोजनाएं",
@@ -100,7 +149,6 @@
   "aquacultureProjects": "जलकृषि परियोजनाएं",
   "livestockFarmingProjects": "पशुपालन परियोजनाएं",
   "farmEngineeringProjects": "कृषि इंजीनियरिंग परियोजनाएं",
-
   "userDetailsTitle": "अपने बारे में बताएं",
   "userDetailsSubtitle": "आपके अनुभव को बेहतर बनाने के लिए कुछ जानकारी",
   "enterAddress": "अपना गाँव / शहर दर्ज करें",
