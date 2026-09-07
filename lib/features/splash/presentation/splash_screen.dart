@@ -26,7 +26,9 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
       if (isAuth) {
         context.go(Routes.home);
       } else {
-        context.go(Routes.languageSelect);
+        // Language selection is no longer part of the first-launch flow —
+        // it's still available anytime from Profile > Language.
+        context.go(Routes.otpLogin);
       }
     });
   }
